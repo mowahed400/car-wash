@@ -57,21 +57,24 @@
 
                             <li> <a href="{{route('mess.index')}}">{{trans('mess.mess')}} </a> </li>
                         </ul>
+
                     </li>
                                          <li>
                                             <a href="javascript:void(0);" data-toggle="collapse" data-target="#chart">
                                                 <div class="pull-left"><i class="ti-pie-chart"></i><span
-                                                        class="right-nav-text">Services</span></div>
+                                                        class="right-nav-text">connect us</span></div>
                                                 <div class="pull-right"><i class="ti-plus"></i></div>
                                                 <div class="clearfix"></div>
                                             </a>
                                             <ul id="chart" class="collapse" data-parent="#sidebarnav">
-                                                <li> <a href="">Services</a> </li>
+                                                <li> <a href="{{route('connect.index')}}">Services</a> </li>
+
 
                                             </ul>
                                         </li>
 
                     <li>
+
                     <!-- menu item todo-->
 {{--                    <li>--}}
 {{--                        <a href="todo-list.html"><i class="ti-menu-alt"></i><span class="right-nav-text">Todo--}}
