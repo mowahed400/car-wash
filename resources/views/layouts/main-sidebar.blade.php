@@ -8,12 +8,12 @@
                     <li>
                             <a href="">
                                 <div class="pull-left"><i class="ti-home"></i><span
-                                        class="right-nav-text">{{ trans('navbar.Dashboard') }}</span></div>
+                                        class="right-nav-text">{{ trans('mess.Dashboard') }}</span></div>
                                 <div class="clearfix"></div>
                             </a>
                     </li>
                     <!-- menu title -->
-                    <li class="mt-10 mb-10 text-muted pl-4 font-medium menu-title">Components </li>
+                    <li class="mt-10 mb-10 text-muted pl-4 font-medium menu-title"> </li>
                     <!-- menu item Elements-->
 {{--                    <li>--}}
 {{--                        <a href="javascript:void(0);" data-toggle="collapse" data-target="#elements">--}}
@@ -48,15 +48,14 @@
                     <!-- -->
                     <!--menu item Posts -->
                     <li>
-                        <a href="javascript:void(0);" data-toggle="collapse" data-target="#calendar-menu">
-                            <div class="pull-left"><i class="ti-calendar"></i><span
-                                    class="right-nav-text">Posts</span></div>
-                            <div class="pull-right"><i class="ti-plus"></i></div>
-                            <div class="clearfix"></div>
-                        </a>
-                        <ul id="calendar-menu" class="collapse" data-parent="#sidebarnav">
-                            <li> <a href="">List Posts </a> </li>
-                            <li> <a href="">Comments</a> </li>
+{{--                        <a href="" data-toggle="collapse" data-target="#calendar-menu">--}}
+{{--                            <div class="pull-left"><i class="ti-calendar"></i><span--}}
+{{--                                    class="right-nav-text"></span></div>--}}
+{{--                            <div class="pull-right"><i class="ti-plus"></i></div>--}}
+{{--                            <div class="clearfix"></div>--}}
+{{--                        </a>--}}
+
+                            <li> <a href="{{route('mess.index')}}">{{trans('mess.mess')}} </a> </li>
                         </ul>
                     </li>
                                          <li>
