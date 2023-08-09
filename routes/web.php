@@ -18,17 +18,18 @@ use Stevebauman\Location\Facades\Location;
 Auth::routes();
 
 Route::get('/', function () {
-    return view('Front-End.index');
+    return view('welcome');
 });
 
-Route::get('/loc', function () {
-    //    $clientIP = request()->ip();
-    //
-    //    $data = Location::get($clientIP);
-    //    dd($clientIP);
+Route::group(
+    [
+        'prefix' => LaravelLocalization::setLocale(),
+        'middleware' => ['localeSessionRedirect', 'localizationRedirect', 'localeViewPath', 'auth']
+    ],
+    function () {
 
-    //    $ip = '127.0.0.1'; //For static IP address get
-    $ip = '127.0.0.1'; //Dynamic IP address get
-    $data = Location::get($ip);
-    dd($data);
-});
+
+        Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+        Route::resource('mess', MessageController::class);
+    }
+);
