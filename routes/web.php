@@ -3,6 +3,7 @@
 use App\Http\Controllers\MessageController;
 use App\Http\Controllers\ConnectController;
 use Illuminate\Support\Facades\Route;
+use Stevebauman\Location\Facades\Location;
 
 /*
 |--------------------------------------------------------------------------
