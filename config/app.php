@@ -163,6 +163,8 @@ return [
         Illuminate\Translation\TranslationServiceProvider::class,
         Illuminate\Validation\ValidationServiceProvider::class,
         Illuminate\View\ViewServiceProvider::class,
+        Stevebauman\Location\LocationServiceProvider::class,
+
 
         /*
          * Package Service Providers...
@@ -191,7 +193,7 @@ return [
     */
 
     'aliases' => Facade::defaultAliases()->merge([
-        // ...
+        'Location' => 'Stevebauman\Location\Facades\Location',
     ])->toArray(),
 
 ];
