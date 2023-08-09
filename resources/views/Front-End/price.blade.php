@@ -87,7 +87,7 @@
 
                 <!-- add_form -->
 
-                <form action="{{ route('connect.update', 'test') }}" method="post">
+                <form action="" method="post">
                     {{ method_field('PUT') }}
                     @csrf
                     {{ 'approve request'}}
@@ -197,8 +197,11 @@
                     </div>
                     <!------------End_Plate_Number------------>
 
-                    <div class="col-auto">
-                        <button type="submit" class="btn btn-success">Confirm identity</button>
+                    <div class="modal-footer">
+                        <button type="button" class="btn btn-custom"
+                                data-dismiss="modal">CLose</button>
+                        <button type="submit"
+                                class="btn btn-custom">Book</button>
                     </div>
                 </form>
             </div>
