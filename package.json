@@ -11,8 +11,9 @@
         "laravel-mix": "^6.0.6",
         "laravel-vite-plugin": "^0.7.8",
         "lodash": "^4.17.19",
-        "postcss": "^8.1.14",
-        "sass": "^1.56.1",
-        "vite": "^4.4.9"
+        "postcss": "^8.1.14"
+    },
+    "dependencies": {
+        "bootstrap-icons": "^1.10.5"
     }
 }
