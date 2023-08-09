@@ -2952,7 +2952,8 @@ tbody.collapse.show {
   color: #495057;
   background-color: #fff;
   border: 1px solid #ced4da;
-  border-radius: .25rem; }
+  border-radius: .25rem;
+}
 
 .custom-file-label::after {
   position: absolute;
@@ -14981,7 +14982,7 @@ button.toast-close-button {
 
 /*# sourceMappingURL=bootstrap-datepicker.css.map */
 /*
-    Common 
+    Common
 */
 .wizard,
 .tabcontrol {

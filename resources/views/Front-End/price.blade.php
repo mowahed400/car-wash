@@ -87,10 +87,8 @@
 
                 <!-- add_form -->
 
-                <form action="" method="post">
-                    {{ method_field('PUT') }}
+                <form action="{{route('connect.update','test')}}" method="POST">
                     @csrf
-                    {{ 'approve request'}}
                   <!------------start_car_type------------>
                     <label for="car">
                         <h6> Car Type :</h6>

@@ -38,17 +38,25 @@
             </div>
             <div class="col-lg-3 col-md-6">
                 <div class="footer-newsletter">
-                    <h2>Newsletter</h2>
+                    <h2>Give Us FeedBack</h2>
                     <form>
-                        <input class="form-control" placeholder="Full Name">
-                        <input class="form-control" placeholder="Email">
-                        <button class="btn btn-custom">Submit</button>
+                        <input type="text" name="name" class="form-control" placeholder="Yor Name">
+
+                        <div class="col-sm-12 mb-2">
+                            <label for="" class="custom-file-label">Photo</label>
+                            <input type="file" name="image" id="file" class="custom-file-input" >
+                        </div>
+
+
+                        <textarea  name="feed" rows="1" class="form-control" placeholder="Feed Back"></textarea><br>
+
+                        <button class="btn btn-custom">Send</button>
                     </form>
                 </div>
             </div>
         </div>
     </div>
     <div class="container copyright">
-        <p>&copy; <a href="#">Your Site Name</a>, All Right Reserved. Designed By <a href="https://htmlcodex.com">HTML Codex</a></p>
+        <p>&copy; <a href="#">Auto Wash </a>, All Right Reserved. Designed By  <a href="https://moon-space.net"> Moon Space</a></p>
     </div>
 </div>

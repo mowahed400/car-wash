@@ -22,7 +22,7 @@
 
 
         <!-- About Start -->
-        @include('Front-End.about')
+{{--        @include('Front-End.about')--}}
         <!-- About End -->
 
 

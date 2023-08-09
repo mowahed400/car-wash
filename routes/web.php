@@ -22,13 +22,7 @@ Route::get('/', function () {
     return view('Front-End.index');
 });
 
-Route::group(
-    [
-        'prefix' => LaravelLocalization::setLocale(),
-        'middleware' => ['localeSessionRedirect', 'localizationRedirect', 'localeViewPath', 'auth']
-    ],
-    function () {
-
+Route::group(['middleware' => ['auth']], function () {
 
         Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
         Route::resource('mess', MessageController::class);
