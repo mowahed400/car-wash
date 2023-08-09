@@ -9,10 +9,10 @@ body {
 }
 
 h1,
-h2, 
-h3, 
+h2,
+h3,
 h4,
-h5, 
+h5,
 h6 {
     color: #202C45;
 }
@@ -32,7 +32,7 @@ a:focus {
 
 .btn.btn-custom {
     padding: 10px 30px 12px 30px;
-    text-align: center; 
+    text-align: center;
     font-size: 16px;
     font-weight: 500;
     color: #ffffff;
@@ -61,7 +61,7 @@ a:focus {
 }
 
 [class^="flaticon-"]:before, [class*=" flaticon-"]:before,
-[class^="flaticon-"]:after, [class*=" flaticon-"]:after {   
+[class^="flaticon-"]:after, [class*=" flaticon-"]:after {
     font-size: inherit;
     margin-left: 0;
 }
@@ -297,11 +297,11 @@ a:focus {
     .navbar-dark .navbar-nav .nav-link.active {
         padding: 5px 0;
     }
-    
+
     .nav-bar .dropdown-menu {
         box-shadow: none;
     }
-    
+
     .nav-bar .btn {
         display: none;
     }
@@ -452,15 +452,15 @@ a:focus {
     .carousel .carousel-text h3 {
         margin-bottom: 5px;
     }
-    
+
     .carousel .carousel-text h1 {
         font-size: 60px;
     }
-    
+
     .carousel .carousel-text p {
         font-size: 16px;
     }
-    
+
     .carousel .carousel-text .btn {
         padding: 12px 30px;
         font-size: 15px;
@@ -474,11 +474,11 @@ a:focus {
         letter-spacing: 2px;
         margin-bottom: 15px;
     }
-    
+
     .carousel .carousel-text h1 {
         font-size: 45px;
     }
-    
+
     .carousel .carousel-text .btn {
         padding: 10px 25px;
         font-size: 15px;
@@ -492,16 +492,16 @@ a:focus {
         letter-spacing: 1px;
         margin-bottom: 10px;
     }
-    
+
     .carousel .carousel-text h1 {
         font-size: 30px;
         margin-bottom: 15px;
     }
-    
+
     .carousel .carousel-text p {
         margin-bottom: 25px;
     }
-    
+
     .carousel .carousel-text .btn {
         padding: 8px 20px;
         font-size: 14px;
@@ -571,11 +571,11 @@ a:focus {
     .page-header {
         padding: 60px 0;
     }
-    
+
     .page-header h2 {
         font-size: 45px;
     }
-    
+
     .page-header a {
         font-size: 20px;
     }
@@ -585,11 +585,11 @@ a:focus {
     .page-header {
         padding: 45px 0;
     }
-    
+
     .page-header h2 {
         font-size: 35px;
     }
-    
+
     .page-header a {
         font-size: 18px;
     }
@@ -896,7 +896,7 @@ a:focus {
 }
 
 .price .price-item .price-footer .btn.btn-custom {
-    color: #E81C2E;
+    color: #ffffff;
     background: #202C45;
     box-shadow: inset 0 0 0 0 #E81C2E;
 }
@@ -914,13 +914,51 @@ a:focus {
 }
 
 .price .price-item.featured-item .price-footer .btn.btn-custom:hover {
-    color: #E81C2E;
+    color: #ffffff;
+    background: #202C45;
+    box-shadow: inset 200px 0 0 0 #202C45;
+}
+.price .price-item.featured-item .price-footer .dropdown-menu {
+    color: #ffffff;
+    background: #E81C2E;
+    box-shadow: inset 0 0 0 0 #202C45;
+}
+.price .price-item.featured-item .price-footer .dropdown-menu:hover {
+    color: #ffffff;
     background: #202C45;
     box-shadow: inset 200px 0 0 0 #202C45;
 }
 
+ .modal-dialog .modal-content .letter-box {
 
-/*******************************/
+
+     border-width: 3px;
+     border-color: #E81C2E ;
+
+}
+.modal-dialog .modal-content .number-box {
+
+
+    border-width: 3px;
+    border-color: #E81C2E ;
+
+}
+.modal-dialog .modal-content  .radio-icon {
+
+
+    border-width: 3px;
+    border-color: #202C45 ;
+
+}
+
+
+
+
+
+
+
+
+    /*******************************/
 /******** Location CSS *********/
 /*******************************/
 .location {
@@ -1344,7 +1382,7 @@ a:focus {
     padding: 35px 30px 10px 30px;
     border-radius: 5px;
     background: #202C45;
-    
+
 }
 
 .contact .contact-info h2 {
@@ -1854,11 +1892,11 @@ a:focus {
 }
 
 .sidebar .category-widget ul li {
-    margin: 0 0 12px 22px; 
+    margin: 0 0 12px 22px;
 }
 
 .sidebar .category-widget ul li:last-child {
-    margin-bottom: 0; 
+    margin-bottom: 0;
 }
 
 .sidebar .category-widget ul li a {
@@ -2054,3 +2092,40 @@ a:focus {
 .footer .copyright p a:hover {
     color: #ffffff;
 }
+
+.radio-container {
+    display: inline-block;
+    position: relative;
+    cursor: pointer;
+}
+
+.radio-icon {
+    position: absolute;
+    top: 0;
+    left: 0;
+    height: 20px; /* Adjust this to match your icon size */
+    width: 20px; /* Adjust this to match your icon size */
+    background-image: url('public/Front-End/img/car1.png'); /* Replace with your icon's path */
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    border-radius: 90%; /* Make the icon circular to resemble a radio button */
+    border: 3px solid #ccc; /* Border color of the icon */
+}
+
+input[type="radio"] {
+    position: absolute;
+    opacity: 0; /* Hide the actual radio button */
+    cursor: pointer;
+}
+
+input[type="radio"]:checked + .radio-icon {
+    border-width: 11px;
+    border-color: #E81C2E; /* Border color when radio button is checked */
+}
+
+
+
+
+
+

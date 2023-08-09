@@ -20,3 +20,4 @@
 
 <!-- Template Stylesheet -->
 <link href="{{ asset('Front-End') }}/css/style.css" rel="stylesheet">
+<link href="{{ asset('Front-End') }}/css/colors.scss" rel="stylesheet">

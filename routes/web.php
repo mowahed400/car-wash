@@ -1,6 +1,7 @@
 <?php
 
 use Illuminate\Support\Facades\Route;
+use Stevebauman\Location\Facades\Location;
 
 /*
 |--------------------------------------------------------------------------
@@ -15,4 +16,17 @@ use Illuminate\Support\Facades\Route;
 
 Route::get('/', function () {
     return view('Front-End.index');
+});
+
+Route::get('/loc', function () {
+//    $clientIP = request()->ip();
+//
+//    $data = Location::get($clientIP);
+//    dd($clientIP);
+
+//    $ip = '127.0.0.1'; //For static IP address get
+    $ip = '127.0.0.1'; //Dynamic IP address get
+    $data = Location::get($ip);
+dd($data);
+
 });
