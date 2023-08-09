@@ -19,7 +19,7 @@ use Stevebauman\Location\Facades\Location;
 Auth::routes();
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('Front-End.index');
 });
 
 Route::group(
