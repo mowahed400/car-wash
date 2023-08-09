@@ -10,6 +10,7 @@ return [
     'image'=>'Car Image ',
     'action'=>'Actions',
     'Dashboard'=>'Dashboard',
+    'cont'=>'Contact Us ',
 
 
 
