@@ -87,10 +87,8 @@
 
                 <!-- add_form -->
 
-                <form action="" method="post">
-                    {{ method_field('PUT') }}
+                <form action="{{route('message.store')}}" method="POST">
                     @csrf
-                    {{ 'approve request'}}
                   <!------------start_car_type------------>
                     <label for="car">
                         <h6> Car Type :</h6>
@@ -99,7 +97,7 @@
 
                         <div class="col">
                             <label class="radio-container">
-                                <input type="radio" name="radio-group" value="Large">
+                                <input type="radio" name="cartype" value="Large">
                                 <span class="radio-icon"></span>
                                 <img src="{{ asset('Front-End') }}/img/car1.png" style="width: 80% ; height: 80%">
                                 <p>Large</p>
@@ -108,7 +106,7 @@
 
                         <div class="col">
                             <label class="radio-container">
-                                <input type="radio" name="radio-group" value="Large">
+                                <input type="radio" name="cartype" value="Large">
                                 <span class="radio-icon"></span>
                                 <img src="{{ asset('Front-End') }}/img/car2.png" style="width: 80% ; height: 80%">
                                 <p>Medium</p>
@@ -117,7 +115,7 @@
 
                         <div class="col">
                             <label class="radio-container">
-                                <input type="radio" name="radio-group" value="Large">
+                                <input type="radio" name="cartype" value="Large">
                                 <span class="radio-icon"></span>
                                 <img src="{{ asset('Front-End') }}/img/car3.png" style="width: 80% ; height: 80%">
                                 <p>Small</p>
@@ -135,7 +133,7 @@
                                     <button type="button" class="btn btn-custom">
                                         Car Brand
                                     </button>
-                                    <select id="dropdown" class="btn btn-custom" name="car_model">
+                                    <select id="dropdown" class="btn btn-custom" name="carbrand">
                                         <option value="Toyota">Toyota</option>
                                         <option value="Ford">Ford</option>
                                         <option value="Chevrolet">Chevrolet</option>
@@ -174,7 +172,7 @@
                                 <button type="button" class="btn btn-custom dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                 </button>
                                 <div class="dropdown-menu">
-                                    <input type="color" id="colorPicker" name="car_color">
+                                    <input type="color" id="colorPicker" name="color">
                                     <p>Selected Color <span id="selectedColor">#FFFFFF</span></p>
                                 </div>
                             </div>
