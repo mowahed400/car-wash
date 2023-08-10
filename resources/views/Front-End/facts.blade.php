@@ -6,7 +6,7 @@
                     <i class="fa fa-map-marker-alt"></i>
                     <div class="facts-text">
                         <h3 data-toggle="counter-up">25</h3>
-                        <p>Service Points</p>
+                        <p>{{trans('servces.WHAT WE DO')}}</p>
                     </div>
                 </div>
             </div>
@@ -15,7 +15,7 @@
                     <i class="fa fa-user"></i>
                     <div class="facts-text">
                         <h3 data-toggle="counter-up">350</h3>
-                        <p>Engineers & Workers</p>
+                        <p>{{trans('servces.Engineers & Workers')}}</p>
                     </div>
                 </div>
             </div>
@@ -24,7 +24,7 @@
                     <i class="fa fa-users"></i>
                     <div class="facts-text">
                         <h3 data-toggle="counter-up">1500</h3>
-                        <p>Happy Clients</p>
+                        <p>{{trans('servces.Happy Clients')}}</p>
                     </div>
                 </div>
             </div>
@@ -33,7 +33,7 @@
                     <i class="fa fa-check"></i>
                     <div class="facts-text">
                         <h3 data-toggle="counter-up">5000</h3>
-                        <p>Projects Completed</p>
+                        <p>{{trans('servces.Projects Completed')}}</p>
                     </div>
                 </div>
             </div>

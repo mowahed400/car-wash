@@ -2,10 +2,10 @@
 
 namespace App\Http\Controllers;
 
-use App\Models\Connect;
+use App\Models\WashingPoint;
 use Illuminate\Http\Request;
 
-class ConnectController extends Controller
+class WashingPointController extends Controller
 {
     /**
      * Display a listing of the resource.
@@ -14,8 +14,8 @@ class ConnectController extends Controller
      */
     public function index()
     {
-        $Connects=Connect::all();
-        return view('dashboard.connect',compact('Connects'));
+        $Washings=WashingPoint::all();
+        return view('dashboard.address.WashingPoint',compact('Washings'));
     }
 
     /**
@@ -36,27 +36,27 @@ class ConnectController extends Controller
      */
     public function store(Request $request)
     {
-
+        //
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Connect  $connect
+     * @param  \App\Models\WashingPoint  $washingPoint
      * @return \Illuminate\Http\Response
      */
-    public function show(Connect $connect)
+    public function show(WashingPoint $washingPoint)
     {
-
+        //
     }
 
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Connect  $connect
+     * @param  \App\Models\WashingPoint  $washingPoint
      * @return \Illuminate\Http\Response
      */
-    public function edit(Connect $connect)
+    public function edit(WashingPoint $washingPoint)
     {
         //
     }
@@ -65,40 +65,22 @@ class ConnectController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Connect  $connect
+     * @param  \App\Models\WashingPoint  $washingPoint
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request)
+    public function update(Request $request, WashingPoint $washingPoint)
     {
-        $Connects= Connect::find(1);
-        $Connects->update([
-
-            'whats' => $request->whats,
-            'worktime' => $request->worktime,
-            'email' => $request->email,
-            'twlinke' => $request->twlinke,
-            'inslinke' => $request->inslinke,
-            'usermail' => $request->usermail,
-            'cover' => $request->cover,
-
-
-        ]);
-             return redirect()->back();
-
+        //
     }
 
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Connect  $connect
+     * @param  \App\Models\WashingPoint  $washingPoint
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(WashingPoint $washingPoint)
     {
-        Connect::find($id)->delete();
-
-        return redirect()->back();
-
-        }
-
+        //
+    }
 }

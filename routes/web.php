@@ -2,6 +2,7 @@
 
 use App\Http\Controllers\MessageController;
 use App\Http\Controllers\ConnectController;
+use App\Http\Controllers\WashingPointController;
 use Illuminate\Support\Facades\Route;
 use Stevebauman\Location\Facades\Location;
 
@@ -19,7 +20,7 @@ use Stevebauman\Location\Facades\Location;
 Auth::routes();
 
 Route::get('/', function () {
-    return view('welcome');
+    return view('Front-End.index');
 });
 
 Route::group(
@@ -33,5 +34,6 @@ Route::group(
         Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
         Route::resource('mess', MessageController::class);
         Route::resource('connect', ConnectController::class);
+        Route::resource('Washing', WashingPointController::class);
     }
 );
