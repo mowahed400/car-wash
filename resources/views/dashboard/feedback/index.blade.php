@@ -63,14 +63,15 @@
                                     <p class="fw-normal mb-1">{{$review->feedback}}</p>
 
                                 </td>
-
                                 <td style="align-content: center">
-                                    <img src="{{asset('assets/images/'.$review->image)}}" width="80" height="80" class="img img-responsive">
+                                <img style="width: 40%"
+                                     @if($review->image == null)
+                                         src="{{asset('assets/images/no_user.png')}}" class="testimonial-img" alt=""
+                                     @else
+                                         src="{{asset('assets/images/'.$review->image)}}" class="testimonial-img" alt=""
+                                    @endif>
 
                                 </td>
-
-
-
 
 
                         <td style="text-align: center">
@@ -126,7 +127,6 @@
 
                                                         </div>
                                                     </div>
-
 
                                                     <br><br>
 

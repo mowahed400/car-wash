@@ -14,13 +14,13 @@
 <!-- CSS Libraries -->
 <link href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" rel="stylesheet">
 <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.10.0/css/all.min.css" rel="stylesheet">
-<link href="{{ asset('Front-End') }}/lib/flaticon/font/flaticon.css" rel="stylesheet">
-<link href="{{ asset('Front-End') }}/lib/animate/animate.min.css" rel="stylesheet">
-<link href="{{ asset('Front-End') }}/lib/owlcarousel/assets/owl.carousel.min.css" rel="stylesheet">
+<link href="{{ asset('Front-End/lib/flaticon/font/flaticon.css') }}" rel="stylesheet">
+<link href="{{ asset('Front-End/lib/animate/animate.min.css') }}" rel="stylesheet">
+<link href="{{ asset('Front-End/lib/owlcarousel/assets/owl.carousel.min.css') }}" rel="stylesheet">
 
 <!-- Template Stylesheet -->
-<link href="{{ asset('Front-End') }}/css/style.css" rel="stylesheet">
-<link href="{{ asset('Front-End') }}/css/colors.scss" rel="stylesheet">
+<link href="{{ asset('Front-End/css/style.css') }}" rel="stylesheet">
+<link href="{{ asset('Front-End/css/colors.scss') }}" rel="stylesheet">
 
 {{--<style>--}}
 {{--    body {--}}

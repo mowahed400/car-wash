@@ -8,7 +8,7 @@
             <div class="col-lg-4">
                 <div class="blog-item">
                     <div class="blog-img">
-                        <img src="{{ asset('Front-End') }}/img/blog-1.jpg" alt="Image">
+                        <img src="{{ asset('Front-End/img/blog-1.jpg') }}" alt="Image">
                         <div class="meta-date">
                             <span>01</span>
                             <strong>Jan</strong>
@@ -31,7 +31,7 @@
             <div class="col-lg-4">
                 <div class="blog-item">
                     <div class="blog-img">
-                        <img src="{{ asset('Front-End') }}/img/blog-2.jpg" alt="Image">
+                        <img src="{{ asset('Front-End/img/blog-2.jpg') }}" alt="Image">
                         <div class="meta-date">
                             <span>01</span>
                             <strong>Jan</strong>
@@ -54,7 +54,7 @@
             <div class="col-lg-4">
                 <div class="blog-item">
                     <div class="blog-img">
-                        <img src="{{ asset('Front-End') }}/img/blog-3.jpg" alt="Image">
+                        <img src="{{ asset('Front-End/img/blog-3.jpg') }}" alt="Image">
                         <div class="meta-date">
                             <span>01</span>
                             <strong>Jan</strong>
