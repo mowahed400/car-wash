@@ -42,13 +42,14 @@
                         <th style="width: 25%">{{trans('mess.name')}}</th>
                         <th style="width: 25%">{{trans('mess.feed')}}</th>
                         <th style="width: 25%">{{trans('mess.image')}}</th>
+                        <th style="width: 25%">عمليات</th>
 
                     </tr>
                     </thead>
                     <tbody>
                     @foreach($reviews as $review)
 
-                            <tr>
+
 
 
 
@@ -63,6 +64,9 @@
                                     <p class="fw-normal mb-1">{{$review->feedback}}</p>
 
                                 </td>
+
+
+
                                 <td style="align-content: center">
                                 <img style="width: 40%"
                                      @if($review->image == null)
@@ -75,17 +79,16 @@
 
 
                         <td style="text-align: center">
-{{--                            <form action="{{route('ServeProvide.destroy',$mes->id)}}" method="post">--}}
-{{--                                @csrf--}}
-{{--                                @method('DELETE')--}}
-{{--                                <button type="submit"class="btn btn-danger"><i class="fa-light fa-trash fa-beat"></i></button>--}}
-{{--                            </form>--}}
-{{--                            <button type="button" class="btn btn-danger btn-sm" data-toggle="modal"--}}
-{{--                                    data-target="#delete{{ $mes->id }}"--}}
-{{--                                    title="Edit"><i--}}
-{{--                                    class="fa fa-trash"></i></button>--}}
+                            <form action="{{route('feed.destroy',$review->id)}}" method="post">
+                                @csrf
+                                @method('DELETE')
+                                <button type="submit"class="btn btn-danger">حذف</button>
+                            </form>
+                           <a href="{{route('feed.show',$review->id)}} " class="btn btn-info" > اضافه</a>
                         </td>
-                                <div class="modal fade" id="edit{{ $review->id }}" tabindex="-1" role="dialog"
+
+
+                         <div class="modal fade" id="edit{{ $review->id }}" tabindex="-1" role="dialog"
                                      aria-labelledby="exampleModalLabel" aria-hidden="true">
                                     <div class="modal-dialog" role="document">
                                         <div class="modal-content">
