@@ -5,67 +5,67 @@ rtl
 @endif">
     <div class="container">
         <div class="section-header text-center">
-            <p>Washing Plan</p>
-            <h2>Choose Your Plan</h2>
+            <p>{{trans('front.WASHING PLAN')}}</p>
+            <h2>{{trans('front.Choose Your Plan')}}</h2>
         </div>
         <div class="row">
             <div class="col-md-4">
                 <div class="price-item">
-                    <div class="price-header">
-                        <h3>Basic Cleaning</h3>
+                    <div class="@if(LaravelLocalization::getCurrentLocale() == 'ar')  price-header-ar @else price-header @endif">
+                        <h3>{{trans('front.Basic Cleaning')}}</h3>
                         <h2><span>$</span><strong>25</strong><span>.99</span></h2>
                     </div>
                     <div class="price-body">
                         <ul>
-                            <li><i class="far fa-check-circle"></i>Seats Washing</li>
-                            <li><i class="far fa-check-circle"></i>Vacuum Cleaning</li>
-                            <li><i class="far fa-check-circle"></i>Exterior Cleaning</li>
-                            <li><i class="far fa-times-circle"></i>Interior Wet Cleaning</li>
-                            <li><i class="far fa-times-circle"></i>Window Wiping</li>
+                            <li><i class="far fa-check-circle"></i>{{trans('front.Seats Washing')}}</li>
+                            <li><i class="far fa-check-circle"></i>{{trans('front.Vacuum Cleaning')}}</li>
+                            <li><i class="far fa-check-circle"></i>{{trans('front.Exterior Cleaning')}}</li>
+                            <li><i class="far fa-times-circle"></i>{{trans('front.Interior Wet Cleaning')}}</li>
+                            <li><i class="far fa-times-circle"></i>{{trans('front.Window Wiping')}}</li>
                         </ul>
                     </div>
                     <div class="price-footer">
-                        <a class="btn btn-custom" data-toggle="modal" href="#exampleModal">Book Now</a>
+                        <a class="btn btn-custom" data-toggle="modal" href="#exampleModal">{{trans('front.Book Now')}}</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="price-item featured-item">
-                    <div class="price-header">
-                        <h3>Premium Cleaning</h3>
+                    <div class="@if(LaravelLocalization::getCurrentLocale() == 'ar')  price-header-ar @else price-header @endif">
+                        <h3>{{trans('front.Premium Cleaning')}}</h3>
                         <h2><span>$</span><strong>35</strong><span>.99</span></h2>
                     </div>
                     <div class="price-body">
                         <ul>
-                            <li><i class="far fa-check-circle"></i>Seats Washing</li>
-                            <li><i class="far fa-check-circle"></i>Vacuum Cleaning</li>
-                            <li><i class="far fa-check-circle"></i>Exterior Cleaning</li>
-                            <li><i class="far fa-check-circle"></i>Interior Wet Cleaning</li>
-                            <li><i class="far fa-times-circle"></i>Window Wiping</li>
+                            <li><i class="far fa-check-circle"></i>{{trans('front.Seats Washing')}}</li>
+                            <li><i class="far fa-check-circle"></i>{{trans('front.Vacuum Cleaning')}}</li>
+                            <li><i class="far fa-check-circle"></i>{{trans('front.Exterior Cleaning')}}</li>
+                            <li><i class="far fa-check-circle"></i>{{trans('front.Interior Wet Cleaning')}}</li>
+                            <li><i class="far fa-times-circle"></i>{{trans('front.Window Wiping')}}</li>
                         </ul>
                     </div>
                     <div class="price-footer">
-                        <a class="btn btn-custom" data-toggle="modal" href="#exampleModal">Book Now</a>
+                        <a class="btn btn-custom" data-toggle="modal" href="#exampleModal">{{trans('front.Book Now')}}</a>
                     </div>
                 </div>
             </div>
             <div class="col-md-4">
                 <div class="price-item">
-                    <div class="price-header">
-                        <h3>Complex Cleaning</h3>
+                    <div class="@if(LaravelLocalization::getCurrentLocale() == 'ar')  price-header-ar @else price-header @endif">
+                        <h3>{{trans('front.Complex Cleaning')}}</h3>
                         <h2><span>$</span><strong>49</strong><span>.99</span></h2>
                     </div>
                     <div class="price-body">
                         <ul>
-                            <li><i class="far fa-check-circle"></i>Seats Washing</li>
-                            <li><i class="far fa-check-circle"></i>Vacuum Cleaning</li>
-                            <li><i class="far fa-check-circle"></i>Exterior Cleaning</li>
-                            <li><i class="far fa-check-circle"></i>Interior Wet Cleaning</li>
-                            <li><i class="far fa-check-circle"></i>Window Wiping</li>
+                            <li><i class="far fa-check-circle"></i>{{trans('front.Seats Washing')}}</li>
+                            <li><i class="far fa-check-circle"></i>{{trans('front.Vacuum Cleaning')}}</li>
+                            <li><i class="far fa-check-circle"></i>{{trans('front.Exterior Cleaning')}}</li>
+                            <li><i class="far fa-check-circle"></i>{{trans('front.Interior Wet Cleaning')}}</li>
+                            <li><i class="far fa-check-circle"></i>{{trans('front.Window Wiping')}}</li>
                         </ul>
                     </div>
                     <div class="price-footer">
-                        <a class="btn btn-custom" data-toggle="modal" href="#exampleModal">Book Now</a>
+                        <a class="btn btn-custom" data-toggle="modal" href="#exampleModal">{{trans('front.Book Now')}}</a>
                     </div>
                 </div>
             </div>
@@ -80,7 +80,7 @@ rtl
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
-                <h4> Book Now</h4>
+                <h4>{{trans('front.Book Now')}}</h4>
                 <button type="button" class="close" data-dismiss="modal" aria-label="Close">
                     <span aria-hidden="true">&times;</span>
                 </button>
@@ -94,7 +94,7 @@ rtl
                     @csrf
                     <!------------start_car_type------------>
                     <label for="car">
-                        <h6> Car Type :</h6>
+                        <h6> {{trans('front.Car Type')}} :</h6>
                     </label><br>
                     <div class="row" id="car">
 
@@ -103,7 +103,7 @@ rtl
                                 <input type="radio" name="cartype" value="Large">
                                 <span class="radio-icon"></span>
                                 <img src="{{ asset('Front-End') }}/img/car1.png" style="width: 80% ; height: 80%">
-                                <p>Large</p>
+                                <p>{{trans('front.Large')}}</p>
                             </label>
                         </div>
 
@@ -112,7 +112,7 @@ rtl
                                 <input type="radio" name="cartype" value="Large">
                                 <span class="radio-icon"></span>
                                 <img src="{{ asset('Front-End') }}/img/car2.png" style="width: 80% ; height: 80%">
-                                <p>Medium</p>
+                                <p>{{trans('front.Medium')}}</p>
                             </label>
                         </div>
 
@@ -121,7 +121,7 @@ rtl
                                 <input type="radio" name="cartype" value="Large">
                                 <span class="radio-icon"></span>
                                 <img src="{{ asset('Front-End') }}/img/car3.png" style="width: 80% ; height: 80%">
-                                <p>Small</p>
+                                <p>{{trans('front.Small')}}</p>
                             </label>
                         </div>
 
@@ -134,7 +134,7 @@ rtl
                             <div class="dropdown" id="car-brand">
                                 <div class="btn-group dropright">
                                     <button type="button" class="btn btn-custom">
-                                        Car Brand
+                                        {{trans('front.Car Brand')}}
                                     </button>
                                     <select id="dropdown" class="btn btn-custom" name="carbrand">
                                         <option value="Toyota">Toyota</option>
@@ -170,13 +170,13 @@ rtl
                             <div class="dropdown" id="car-brand">
                                 <div class="btn-group dropright">
                                     <button type="button" class="btn btn-custom">
-                                        Car Color :
+                                        {{trans('front.Car Color')}} :
                                     </button>
                                     <button type="button" class="btn btn-custom dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
                                     </button>
                                     <div class="dropdown-menu">
                                         <input type="color" id="colorPicker" name="color">
-                                        <p>Selected Color <span id="selectedColor">#FFFFFF</span></p>
+                                        <p>{{trans('front.Selected Color')}} <span id="selectedColor">#FFFFFF</span></p>
                                     </div>
                                 </div>
                             </div>
@@ -187,7 +187,7 @@ rtl
                     <!------------Start_Plate_Number------------>
                     <div class="form-group">
                         <div class="container mt-5">
-                            <h6>Plate Number :</h6>
+                            <h6>{{trans('front.Plate Number')}} :</h6>
                             <label>
                                 <input type="text" maxlength="1" name="Plate1" class="letter-box" style="width: 10% ; text-align: center" autofocus>
                                 <input type="text" maxlength="1" name="Plate2" class="letter-box" style="width: 10% ; text-align: center" disabled>
@@ -199,8 +199,8 @@ rtl
                     <!------------End_Plate_Number------------>
 
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-custom" data-dismiss="modal">CLose</button>
-                        <button type="submit" class="btn btn-custom">Book</button>
+                        <button type="button" class="btn btn-custom" data-dismiss="modal">{{trans('front.CLose')}}</button>
+                        <button type="submit" class="btn btn-custom">{{trans('front.book')}}</button>
                     </div>
                 </form>
             </div>

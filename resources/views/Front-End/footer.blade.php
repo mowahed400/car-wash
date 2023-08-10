@@ -1,6 +1,7 @@
 <div class="footer" id="footer">
     <div class="container">
-        <div class="row">
+        <div class="row" >
+
             <div class="col-lg-4 col-md-6">
                 <div class="footer-contact">
                     <h2>{{trans('front.get')}}</h2>

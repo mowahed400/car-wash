@@ -2,6 +2,7 @@
 
 namespace App\Http\Controllers;
 
+use App\Models\GoodReview;
 use App\Models\Review;
 use App\Traits\UploadImageTrait;
 use Illuminate\Http\Request;
@@ -58,9 +59,18 @@ class ReviewController extends Controller
      * @param  \App\Models\Review  $review
      * @return \Illuminate\Http\Response
      */
-    public function show(Review $review)
+    public function show(Request $request,$id)
     {
-        //
+        $reviews = Review::find($id);
+
+
+        GoodReview::create([
+            'name'=>$reviews->name,
+            'feedback'=>$reviews->feedback,
+            'image'=>$reviews->image
+        ]);
+
+        return redirect()->back();
     }
 
     /**
@@ -71,7 +81,6 @@ class ReviewController extends Controller
      */
     public function edit(Review $review)
     {
-        //
     }
 
     /**
@@ -96,4 +105,6 @@ class ReviewController extends Controller
     {
         //
     }
+
+
 }

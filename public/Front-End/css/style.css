@@ -1,6 +1,17 @@
 /*******************************/
 /********* General CSS *********/
 /*******************************/
+
+@import url(https://fonts.googleapis.com/earlyaccess/amiri.css);
+@import url(https://fonts.googleapis.com/earlyaccess/droidarabickufi.css);
+
+.amiri{
+
+    font-family: 'Amiri', serif;
+}
+.droid-arabic-kufi{
+    font-family: 'Droid Arabic Kufi', serif;}
+
 body {
     color: #444444;
     font-weight: 400;
@@ -370,13 +381,13 @@ a:focus {
     justify-content: center;
     flex-direction: column;
     z-index: 2;
+
 }
 
 .carousel .carousel-text h3 {
     color: #E81C2E;
-    font-size: 20px;
+    font-size: 30px;
     font-weight: 700;
-    letter-spacing: 4px;
     text-transform: uppercase;
     margin-bottom: 0px;
 }
@@ -612,9 +623,8 @@ a:focus {
     margin-bottom: 10px;
     padding-bottom: 5px;
     position: relative;
-    font-size: 16px;
+    font-size: 25px;
     font-weight: 700;
-    letter-spacing: 4px;
     text-transform: uppercase;
     color: #E81C2E;
 }
@@ -719,6 +729,7 @@ a:focus {
     display: flex;
     flex-direction: column;
     margin-bottom: 45px;
+    align-content: center;
 }
 
 .service .service-item i {
@@ -844,6 +855,11 @@ a:focus {
     font-size: 20px;
     font-weight: 700;
     letter-spacing: 2px;
+    text-transform: uppercase;
+}
+price .price-header-ar h3 {
+    font-size: 10px;
+    font-weight: 700;
     text-transform: uppercase;
 }
 

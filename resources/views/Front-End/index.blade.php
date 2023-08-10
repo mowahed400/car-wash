@@ -1,80 +1,79 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
-    @include('Front-End.head')
+        @include('Front-End.head')
 </head>
 
-<body @if(LaravelLocalization::getCurrentLocale() == 'ar')
-          class="amiri"
-    @endif >
+<body @if(LaravelLocalization::getCurrentLocale()=='ar' ) class="droid-arabic-kufi" @endif>
 
-<!-- Top Bar Start -->
-@include('Front-End.top-bar')
+        <!-- Top Bar Start -->
+        @include('Front-End.top-bar')
 
-<!-- Top Bar End -->
+        <!-- Top Bar End -->
 
-<!-- Nav Bar Start -->
-@include('Front-End.nav-bar')
+        <!-- Nav Bar Start -->
+        @include('Front-End.nav-bar')
 
-<!-- Nav Bar End -->
+        <!-- Nav Bar End -->
 
 
-<!-- Carousel Start -->
-@include('Front-End.carousel')
-<!-- Carousel End -->
+        <!-- Carousel Start -->
+        @include('Front-End.carousel')
+        <!-- Carousel End -->
 
 
-<!-- About Start -->
-{{--        @include('Front-End.about')--}}
-<!-- About End -->
+        <!-- About Start -->
+        {{-- @include('Front-End.about')--}}
+        <!-- About End -->
 
 
-<!-- Service Start -->
-@include('Front-End.service')
-<!-- Service End -->
+        <!-- Service Start -->
+        @include('Front-End.service')
+        <!-- Service End -->
 
 
-<!-- Facts Start -->
-@include('Front-End.facts')
-<!-- Facts End -->
+        <!-- Facts Start -->
+        @include('Front-End.facts')
+        <!-- Facts End -->
 
 
-<!-- Price Start -->
-@include('Front-End.price')
-<!-- Price End -->
+        <!-- Price Start -->
+        @include('Front-End.price')
+        <!-- Price End -->
 
 
-<!-- Location Start -->
-@include('Front-End.location')
-<!-- Location End -->
+        <!-- Location Start -->
+        @include('Front-End.location')
+        <!-- Location End -->
 
 
-<!-- Team Start -->
-{{--        @include('Front-End.team')--}}
-<!-- Team End -->
+        <!-- Team Start -->
+        {{-- @include('Front-End.team')--}}
+        <!-- Team End -->
 
 
-<!-- Testimonial Start -->
-@include('Front-End.Testimonial')
-<!-- Testimonial End -->
+        <!-- Testimonial Start -->
+        @include('Front-End.Testimonial')
+        <!-- Testimonial End -->
 
 
-<!-- Blog Start -->
-{{--        @include('Front-End.blog')--}}
-<!-- Blog End -->
+        <!-- Blog Start -->
+        {{-- @include('Front-End.blog')--}}
+        <!-- Blog End -->
 
 
-<!-- Footer Start -->
-@include('Front-End.footer')
-<!-- Footer End -->
+        <!-- Footer Start -->
+        @include('Front-End.footer')
+        <!-- Footer End -->
 
-<!-- Back to top button -->
-<a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+        <!-- Back to top button -->
+        <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
-<!-- Pre Loader -->
-<div id="loader" class="show">
-    <div class="loader"></div>
-</div>
+        <!-- Pre Loader -->
+        <div id="loader" class="show">
+                <div class="loader"></div>
+        </div>
 
         <!-- JavaScript Libraries -->
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
@@ -86,11 +85,16 @@
         <script src="{{ asset('Front-End/lib/counterup/counterup.min.js')}}"></script>
 
         <!-- Contact Javascript File -->
-        <script src="{{ asset('Front-End/mail/jqBootstrapValidation.min.js') }}"></script>
-        <script src="{{ asset('Front-End/mail/contact.js') }}"></script>
+        <<<<<<< HEAD <script src="{{ asset('Front-End') }}/mail/jqBootstrapValidation.min.js">
+                </script>
+                <script src="{{ asset('Front-End') }}/mail/contact.js"></script>
+                =======
+                <script src="{{ asset('Front-End/mail/jqBootstrapValidation.min.js') }}"></script>
+                <script src="{{ asset('Front-End/mail/contact.js') }}"></script>
+                >>>>>>> development
 
-        <!-- Template Javascript -->
-        <script src="{{ asset('Front-End/js/main.js') }}"></script>
+                <!-- Template Javascript -->
+                <script src="{{ asset('Front-End/js/main.js') }}"></script>
 
 
 
@@ -99,4 +103,5 @@
 
 
 </body>
+
 </html>
