@@ -1,12 +1,11 @@
 <!DOCTYPE html>
 <html lang="en">
-    <head>
-        @include('Front-End.head')
-    </head>
 
-    <body @if(LaravelLocalization::getCurrentLocale() == 'ar')
-              class="droid-arabic-kufi"
-    @endif >
+<head>
+        @include('Front-End.head')
+</head>
+
+<body @if(LaravelLocalization::getCurrentLocale()=='ar' ) class="droid-arabic-kufi" @endif>
 
         <!-- Top Bar Start -->
         @include('Front-End.top-bar')
@@ -25,7 +24,7 @@
 
 
         <!-- About Start -->
-{{--        @include('Front-End.about')--}}
+        {{-- @include('Front-End.about')--}}
         <!-- About End -->
 
 
@@ -50,7 +49,7 @@
 
 
         <!-- Team Start -->
-{{--        @include('Front-End.team')--}}
+        {{-- @include('Front-End.team')--}}
         <!-- Team End -->
 
 
@@ -60,7 +59,7 @@
 
 
         <!-- Blog Start -->
-{{--        @include('Front-End.blog')--}}
+        {{-- @include('Front-End.blog')--}}
         <!-- Blog End -->
 
 
@@ -73,23 +72,29 @@
 
         <!-- Pre Loader -->
         <div id="loader" class="show">
-            <div class="loader"></div>
+                <div class="loader"></div>
         </div>
 
         <!-- JavaScript Libraries -->
         <script src="https://code.jquery.com/jquery-3.4.1.min.js"></script>
         <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/js/bootstrap.bundle.min.js"></script>
-        <script src="{{ asset('Front-End') }}/lib/easing/easing.min.js"></script>
-        <script src="{{ asset('Front-End') }}/lib/owlcarousel/owl.carousel.min.js"></script>
-        <script src="{{ asset('Front-End') }}/lib/waypoints/waypoints.min.js"></script>
-        <script src="{{ asset('Front-End') }}/lib/counterup/counterup.min.js"></script>
+        <script src="{{ asset('Front-End/lib/easing/easing.min.js') }}"></script>
+        <script src="{{ asset('Front-End/lib/owlcarousel/owl.carousel.min.js') }}"></script>
+        <script src="{{ asset('Front-End/lib/waypoints/waypoints.min.js')}}"></script>
+
+        <script src="{{ asset('Front-End/lib/counterup/counterup.min.js')}}"></script>
 
         <!-- Contact Javascript File -->
-        <script src="{{ asset('Front-End') }}/mail/jqBootstrapValidation.min.js"></script>
-        <script src="{{ asset('Front-End') }}/mail/contact.js"></script>
+        <<<<<<< HEAD <script src="{{ asset('Front-End') }}/mail/jqBootstrapValidation.min.js">
+                </script>
+                <script src="{{ asset('Front-End') }}/mail/contact.js"></script>
+                =======
+                <script src="{{ asset('Front-End/mail/jqBootstrapValidation.min.js') }}"></script>
+                <script src="{{ asset('Front-End/mail/contact.js') }}"></script>
+                >>>>>>> development
 
-        <!-- Template Javascript -->
-        <script src="{{ asset('Front-End') }}/js/main.js"></script>
+                <!-- Template Javascript -->
+                <script src="{{ asset('Front-End/js/main.js') }}"></script>
 
 
 
@@ -97,6 +102,6 @@
 
 
 
+</body>
 
-    </body>
 </html>

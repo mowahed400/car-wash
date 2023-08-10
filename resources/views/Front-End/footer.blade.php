@@ -37,19 +37,20 @@
             {{-- </div>--}}
             <div class="col-lg-4 col-md-6">
                 <div class="footer-newsletter">
-                    <h2>Give Us FeedBack</h2>
-                    <form>
-                        <input type="text" name="name" class="form-control" placeholder="Yor Name">
+                    <h2>{{trans('front.Give Us FeedBack')}}</h2>
+                    <form action="{{route('feedback.store')}}" method="POST" enctype="multipart/form-data">
+                        @csrf
+                        <input type="text" name="name" class="form-control" placeholder="{{trans('front.name')}}">
 
                         <div class="col-sm-12 mb-2">
-                            <label for="" class="custom-file-label">Photo</label>
+                            <label for="" class="custom-file-label">{{trans('front.photo')}}</label>
                             <input type="file" name="image" id="file" class="custom-file-input">
                         </div>
 
 
-                        <textarea name="feed" rows="1" class="form-control" placeholder="Feed Back"></textarea><br>
+                        <textarea name="feedback" rows="1" class="form-control" placeholder="{{trans('front.feed')}}"></textarea><br>
 
-                        <button class="btn btn-custom">Send</button>
+                        <button class="btn btn-custom">{{trans('front.submit')}}</button>
                     </form>
                 </div>
             </div>

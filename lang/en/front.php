@@ -23,6 +23,10 @@ return [
     'name' => 'Name',
     'book' => 'Book',
     'Book Now' => 'Book Now',
+    'photo' => 'Photo',
+    'feed' => 'Feed Back',
+
+    'Give Us FeedBack' => 'Give Us FeedBack',
     'broject-name' => 'Car-Washer',
     'WASHING PLAN' => 'W A S H I N G  -  P L A N',
     'Choose Your Plan' => 'Choose Your Plan',
