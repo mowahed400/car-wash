@@ -24,7 +24,7 @@ class MessageRequest extends FormRequest
     public function rules()
     {
         return [
-            'carname'=>'required',
+
             'cartype'=>'required',
             'carbrand'=>'required',
             'color'=>'required',
@@ -33,7 +33,7 @@ class MessageRequest extends FormRequest
         public function messages()
     {
         return[
-            'carname.required'=>trans('validation.required'),
+
             'cartype.required'=>trans('validation.required'),
             'carbrand.required'=>trans('validation.required'),
             'color.required'=>trans('validation.required'),

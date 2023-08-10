@@ -21,7 +21,7 @@
                         </ul>
                     </div>
                     <div class="price-footer">
-                        <a class="btn btn-custom"  data-toggle="modal" href="#exampleModal">Book Now</a>
+                        <a class="btn btn-custom" data-toggle="modal" href="#exampleModal">Book Now</a>
                     </div>
                 </div>
             </div>
@@ -41,7 +41,7 @@
                         </ul>
                     </div>
                     <div class="price-footer">
-                        <a class="btn btn-custom"  data-toggle="modal" href="#exampleModal">Book Now</a>
+                        <a class="btn btn-custom" data-toggle="modal" href="#exampleModal">Book Now</a>
                     </div>
                 </div>
             </div>
@@ -61,7 +61,7 @@
                         </ul>
                     </div>
                     <div class="price-footer">
-                        <a class="btn btn-custom"  data-toggle="modal" href="#exampleModal">Book Now</a>
+                        <a class="btn btn-custom" data-toggle="modal" href="#exampleModal">Book Now</a>
                     </div>
                 </div>
             </div>
@@ -72,8 +72,7 @@
 <!-- Book-form -->
 
 
-<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"
-     aria-hidden="true">
+<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel" aria-hidden="true">
     <div class="modal-dialog" role="document">
         <div class="modal-content">
             <div class="modal-header">
@@ -87,9 +86,9 @@
 
                 <!-- add_form -->
 
-                <form action="{{route('connect.update','test')}}" method="POST">
+                <form action="{{route('message.store')}}" method="POST">
                     @csrf
-                  <!------------start_car_type------------>
+                    <!------------start_car_type------------>
                     <label for="car">
                         <h6> Car Type :</h6>
                     </label><br>
@@ -97,7 +96,7 @@
 
                         <div class="col">
                             <label class="radio-container">
-                                <input type="radio" name="radio-group" value="Large">
+                                <input type="radio" name="cartype" value="Large">
                                 <span class="radio-icon"></span>
                                 <img src="{{ asset('Front-End') }}/img/car1.png" style="width: 80% ; height: 80%">
                                 <p>Large</p>
@@ -106,7 +105,7 @@
 
                         <div class="col">
                             <label class="radio-container">
-                                <input type="radio" name="radio-group" value="Large">
+                                <input type="radio" name="cartype" value="Large">
                                 <span class="radio-icon"></span>
                                 <img src="{{ asset('Front-End') }}/img/car2.png" style="width: 80% ; height: 80%">
                                 <p>Medium</p>
@@ -115,7 +114,7 @@
 
                         <div class="col">
                             <label class="radio-container">
-                                <input type="radio" name="radio-group" value="Large">
+                                <input type="radio" name="cartype" value="Large">
                                 <span class="radio-icon"></span>
                                 <img src="{{ asset('Front-End') }}/img/car3.png" style="width: 80% ; height: 80%">
                                 <p>Small</p>
@@ -123,7 +122,7 @@
                         </div>
 
                     </div>
-                  <!------------End_car_type------------>
+                    <!------------End_car_type------------>
 
                     <!------------Start_Car_Brand------------>
                     <div class="form-group">
@@ -133,7 +132,7 @@
                                     <button type="button" class="btn btn-custom">
                                         Car Brand
                                     </button>
-                                    <select id="dropdown" class="btn btn-custom" name="car_model">
+                                    <select id="dropdown" class="btn btn-custom" name="carbrand">
                                         <option value="Toyota">Toyota</option>
                                         <option value="Ford">Ford</option>
                                         <option value="Chevrolet">Chevrolet</option>
@@ -164,20 +163,20 @@
                     <!------------Start_Car_Color------------>
                     <div class="form-group">
                         <div class="container mt-5">
-                        <div class="dropdown" id="car-brand">
-                            <div class="btn-group dropright">
-                                <button type="button" class="btn btn-custom">
-                                    Car Color :
-                                </button>
-                                <button type="button" class="btn btn-custom dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                                </button>
-                                <div class="dropdown-menu">
-                                    <input type="color" id="colorPicker" name="car_color">
-                                    <p>Selected Color <span id="selectedColor">#FFFFFF</span></p>
+                            <div class="dropdown" id="car-brand">
+                                <div class="btn-group dropright">
+                                    <button type="button" class="btn btn-custom">
+                                        Car Color :
+                                    </button>
+                                    <button type="button" class="btn btn-custom dropdown-toggle dropdown-toggle-split" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
+                                    </button>
+                                    <div class="dropdown-menu">
+                                        <input type="color" id="colorPicker" name="color">
+                                        <p>Selected Color <span id="selectedColor">#FFFFFF</span></p>
+                                    </div>
                                 </div>
                             </div>
                         </div>
-                    </div>
                     </div>
                     <!------------End_Car_Color------------>
 
@@ -186,20 +185,18 @@
                         <div class="container mt-5">
                             <h6>Plate Number :</h6>
                             <label>
-                                <input type="text" maxlength="1" name="Plate1"   class="letter-box" style="width: 10% ; text-align: center" autofocus>
-                                <input type="text" maxlength="1" name="Plate2"   class="letter-box" style="width: 10% ; text-align: center" disabled>
-                                <input type="text" maxlength="1" name="Plate3"   class="letter-box" style="width: 10% ; text-align: center" disabled>
-                                <input type="number"             name="Plate4"   class="number-box" style="width: 30% ; text-align: center" disabled>
+                                <input type="text" maxlength="1" name="Plate1" class="letter-box" style="width: 10% ; text-align: center" autofocus>
+                                <input type="text" maxlength="1" name="Plate2" class="letter-box" style="width: 10% ; text-align: center" disabled>
+                                <input type="text" maxlength="1" name="Plate3" class="letter-box" style="width: 10% ; text-align: center" disabled>
+                                <input type="number" name="Plate4" class="number-box" style="width: 30% ; text-align: center" disabled>
                             </label>
                         </div>
                     </div>
                     <!------------End_Plate_Number------------>
 
                     <div class="modal-footer">
-                        <button type="button" class="btn btn-custom"
-                                data-dismiss="modal">CLose</button>
-                        <button type="submit"
-                                class="btn btn-custom">Book</button>
+                        <button type="button" class="btn btn-custom" data-dismiss="modal">CLose</button>
+                        <button type="submit" class="btn btn-custom">Book</button>
                     </div>
                 </form>
             </div>

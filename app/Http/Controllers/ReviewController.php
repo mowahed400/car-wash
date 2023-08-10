@@ -2,12 +2,13 @@
 
 namespace App\Http\Controllers;
 
-use App\Http\Requests\MessageRequest;
-use App\Models\Message;
+use App\Models\Review;
+use App\Traits\UploadImageTrait;
 use Illuminate\Http\Request;
 
-class MessageController extends Controller
+class ReviewController extends Controller
 {
+    use UploadImageTrait;
     /**
      * Display a listing of the resource.
      *
@@ -15,8 +16,8 @@ class MessageController extends Controller
      */
     public function index()
     {
- $mess=Message::all();
-        return view('dashboard.mess.index',compact('mess'));
+        $reviews=Review::all();
+        return view('dashboard.feedback.index',compact('reviews'));
     }
 
     /**
@@ -26,7 +27,7 @@ class MessageController extends Controller
      */
     public function create()
     {
-        //
+
     }
 
     /**
@@ -35,30 +36,23 @@ class MessageController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(MessageRequest $request)
+    public function store(Request $request)
     {
-        $array = [$request->Plate1, $request->Plate2, $request->Plate3,$request->Plate4];
-        $joinedString = implode("-", $array);
-
-
-        Message::insert([
-            'cartype'=>$request->cartype,
-            'carbrand'=>$request->carbrand,
-            'color' =>$request->color,
-            'carplatnumber' =>$joinedString,
-
+        $image=$this->uploadImage($request,'review');
+        Review::create([
+            'name'=>$request->name,
+            'feedback'=>$request->feedback,
+            'image'=>$image
         ]);
-
-        return redirect()->back();
     }
 
     /**
      * Display the specified resource.
      *
-     * @param  \App\Models\Message  $message
+     * @param  \App\Models\Review  $review
      * @return \Illuminate\Http\Response
      */
-    public function show(Message $message)
+    public function show(Review $review)
     {
         //
     }
@@ -66,10 +60,10 @@ class MessageController extends Controller
     /**
      * Show the form for editing the specified resource.
      *
-     * @param  \App\Models\Message  $message
+     * @param  \App\Models\Review  $review
      * @return \Illuminate\Http\Response
      */
-    public function edit(Message $message)
+    public function edit(Review $review)
     {
         //
     }
@@ -78,10 +72,10 @@ class MessageController extends Controller
      * Update the specified resource in storage.
      *
      * @param  \Illuminate\Http\Request  $request
-     * @param  \App\Models\Message  $message
+     * @param  \App\Models\Review  $review
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, Message $message)
+    public function update(Request $request, Review $review)
     {
         //
     }
@@ -89,10 +83,10 @@ class MessageController extends Controller
     /**
      * Remove the specified resource from storage.
      *
-     * @param  \App\Models\Message  $message
+     * @param  \App\Models\Review  $review
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Message $message)
+    public function destroy(Review $review)
     {
         //
     }

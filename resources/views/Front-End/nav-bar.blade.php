@@ -8,24 +8,15 @@
 
             <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                 <div class="navbar-nav mr-auto">
-                    <a href="#carousel" class="nav-item nav-link active">Home</a>
-                    <a href="#about" class="nav-item nav-link">About</a>
-                    <a href="#service" class="nav-item nav-link">Service</a>
-                    <a href="#price" class="nav-item nav-link">Price</a>
-                    <a href="#location" class="nav-item nav-link">Washing Points</a>
-                    <div class="nav-item dropdown">
-                        <a href="#" class="nav-link dropdown-toggle" data-toggle="dropdown">Pages</a>
-                        <div class="dropdown-menu">
-                            <a href="#blog" class="dropdown-item">Blog Grid</a>
-                            <a href="#service" class="dropdown-item">Detail Page</a>
-                            <a href="#team" class="dropdown-item">Team Member</a>
-                            <a href="#service" class="dropdown-item">Schedule Booking</a>
-                        </div>
-                    </div>
-                    <a href="#footer" class="nav-item nav-link">Contact</a>
+                    <a href="#carousel" class="nav-item nav-link active">{{trans('front.Home')}}</a>
+                    <a href="#about" class="nav-item nav-link">{{trans('front.about')}}</a>
+                    <a href="#service" class="nav-item nav-link">{{trans('front.service')}}</a>
+                    <a href="#price" class="nav-item nav-link">{{trans('front.price')}}</a>
+                    <a href="#location" class="nav-item nav-link">{{trans('front.location')}}</a>
+                    <a href="#footer" class="nav-item nav-link">{{trans('front.contact')}}</a>
                 </div>
                 <div class="ml-auto">
-                    <a class="btn btn-custom" href="#">Get Appointment</a>
+                    <a class="btn btn-custom" href="#price">{{trans('front.Home')}}</a>
                 </div>
 
                 <div class="ml-auto dropdown">
