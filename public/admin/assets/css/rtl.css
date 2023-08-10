@@ -3372,7 +3372,7 @@ tbody.collapse.show {
 .custom-file-input {
   position: relative;
   z-index: 2;
-  width: 100%;
+  width: 150%;
   height: calc(2.25rem + 2px);
   margin: 0;
   opacity: 0; }
@@ -22620,7 +22620,8 @@ select.form-control-sm:not([size]):not([multiple]) {
   line-height: 43px; }
 
 .custom-file-label:after {
-  font-family: 'Poppins', sans-serif; }
+  font-family: 'Poppins', sans-serif;
+}
 
 /*hide-axis*/
 .hide-axis text[text-anchor="middle"] {

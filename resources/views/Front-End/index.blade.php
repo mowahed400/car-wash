@@ -22,7 +22,7 @@
 
 
         <!-- About Start -->
-        @include('Front-End.about')
+{{--        @include('Front-End.about')--}}
         <!-- About End -->
 
 
@@ -47,7 +47,7 @@
 
 
         <!-- Team Start -->
-        @include('Front-End.team')
+{{--        @include('Front-End.team')--}}
         <!-- Team End -->
 
 
@@ -57,7 +57,7 @@
 
 
         <!-- Blog Start -->
-        @include('Front-End.blog')
+{{--        @include('Front-End.blog')--}}
         <!-- Blog End -->
 
 

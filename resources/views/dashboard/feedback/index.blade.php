@@ -2,7 +2,7 @@
 @section('css')
 
 @section('title')
-    {{trans('mess.mess')}}
+    {{trans('mess.feed')}}
 @stop
 @endsection
 @section('page-header')
@@ -10,11 +10,11 @@
 <div class="page-title">
     <div class="row">
         <div class="col-sm-6">
-            <h4 class="mb-0"> {{trans('mess.mess')}}</h4>
+            <h4 class="mb-0"> {{trans('mess.feed')}}</h4>
         </div>
         <div class="col-sm-6">
             <ol class="breadcrumb pt-0 pr-0 float-left float-sm-right ">
-                <li class="breadcrumb-item active">{{trans('mess.mess')}}</li>
+                <li class="breadcrumb-item active">{{trans('mess.feed')}}</li>
             </ol>
         </div>
     </div>
@@ -39,15 +39,14 @@
                     <thead class="bg-light">
                     <tr>
 
-                        <th style="width: 25%">{{trans('mess.type')}}</th>
-                        <th style="width: 25%">{{trans('mess.brand')}}</th>
-                        <th style="width: 25%">{{trans('mess.color')}}</th>
-                        <th style="width: 25%">{{trans('mess.platnumber')}}</th>
+                        <th style="width: 25%">{{trans('mess.name')}}</th>
+                        <th style="width: 25%">{{trans('mess.feed')}}</th>
+                        <th style="width: 25%">{{trans('mess.image')}}</th>
 
                     </tr>
                     </thead>
                     <tbody>
-                    @foreach($mess as $mes)
+                    @foreach($reviews as $review)
 
                             <tr>
 
@@ -55,28 +54,23 @@
 
 
                                 <td style="align-content: center">
-                                    <p class="fw-normal mb-1">{{$mes->cartype}}</p>
+                                    <p class="fw-normal mb-1">{{$review->name}}</p>
 
                                 </td>
 
 
                                 <td style="align-content: center">
-                                    <p class="fw-normal mb-1">{{$mes->carbrand}}</p>
+                                    <p class="fw-normal mb-1">{{$review->feedback}}</p>
 
                                 </td>
-
 
                                 <td style="align-content: center">
-                                    <p class="fw-normal mb-1">{{$mes->color}}</p>
+                                    <img src="{{asset('assets/images/'.$review->image)}}" width="80" height="80" class="img img-responsive">
 
                                 </td>
 
 
 
-                                <td style="align-content: center">
-                                    <p class="fw-normal mb-1">{{$mes->carplatnumber}}</p>
-
-                                </td>
 
 
                         <td style="text-align: center">
@@ -90,7 +84,7 @@
 {{--                                    title="Edit"><i--}}
 {{--                                    class="fa fa-trash"></i></button>--}}
                         </td>
-                                <div class="modal fade" id="edit{{ $mes->id }}" tabindex="-1" role="dialog"
+                                <div class="modal fade" id="edit{{ $review->id }}" tabindex="-1" role="dialog"
                                      aria-labelledby="exampleModalLabel" aria-hidden="true">
                                     <div class="modal-dialog" role="document">
                                         <div class="modal-content">
@@ -116,10 +110,10 @@
                                                                 :</label>
                                                             <input id="name" type="text" name="name_ar"
                                                                    class="form-control"
-                                                                   value="{{ $mes->name }}"
+                                                                   value="{{ $review->name }}"
                                                             >
                                                             <input id="id" type="hidden" name="id" class="form-control"
-                                                                   value="{{ $mes->id }}">
+                                                                   value="{{ $review->id }}">
                                                         </div>
 
 
@@ -128,7 +122,7 @@
                                                                    class="mr-sm-2">Logo
                                                             </label>
                                                             <input type="file" class="form-control" name="photo">
-                                                            <img class="custom_img" src="{{asset('assets/images/'.$mes->image)}}" width="60" height="60">
+                                                            <img class="custom_img" src="{{asset('assets/images/'.$review->image)}}" width="60" height="60">
 
                                                         </div>
                                                     </div>

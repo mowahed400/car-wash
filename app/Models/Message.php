@@ -9,10 +9,9 @@ class Message extends Model
 {
     use HasFactory;
     protected $fillable=[
-        'carname',
+
         'cartype',
         'carbrand',
-        'image',
         'color',
         'carplatnumber',
         ];

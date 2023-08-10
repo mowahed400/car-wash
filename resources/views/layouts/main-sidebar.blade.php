@@ -67,7 +67,9 @@
                         <a href="{{route('connect.index')}}">{{trans('mess.cont')}}</a>
                     </li>
 
-
+                    <li>
+                        <a href="{{route('feed.index')}}">{{trans('mess.feed')}}</a>
+                    </li>
 
 
                     <li>
