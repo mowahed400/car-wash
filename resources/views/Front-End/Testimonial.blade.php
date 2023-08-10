@@ -4,19 +4,20 @@
             <p>{{trans('front.Testimonial')}}</p>
             <h2>{{trans('front.What our clients say')}}</h2>
         </div>
+        @foreach($reviews as $review)
         <div class="owl-carousel testimonials-carousel">
             <div class="testimonial-item">
-                <img src="{{ asset('Front-End/img/testimonial-1.jpg') }}" alt="Image">
+                <img   src="{{asset('assets/images/'.$review->image)}}" alt="Image">
                 <div class="testimonial-text">
-                    <h3>{{trans('front.Client Name')}}</h3>
-                    <h4>{{trans('front.Profession')}}</h4>
+                    <h3>{{$review->name}}</h3>
                     <p>
-                        Lorem ipsum dolor sit amet elit. Phasel preti mi facilis ornare velit non vulputa. Aliqu metus tortor auctor gravid
+                        {{$review->feedback}}
                     </p>
                 </div>
             </div>
 
         </div>
+        @endforeach
     </div>
 </div>
 

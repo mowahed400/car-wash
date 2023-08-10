@@ -45,7 +45,6 @@ class ReviewController extends Controller
             $imgPath = $this->uploadImage($request,'review');
         }
 
-
         Review::create([
             'name'=>$request->name,
             'feedback'=>$request->feedback,
