@@ -38,12 +38,19 @@ class ReviewController extends Controller
      */
     public function store(Request $request)
     {
-        $image=$this->uploadImage($request,'review');
+        if ($request->image == "") {
+            $imgPath = "";
+        } else {
+            $imgPath = $this->uploadImage($request,'review');
+        }
+
+
         Review::create([
             'name'=>$request->name,
             'feedback'=>$request->feedback,
-            'image'=>$image
+            'image'=>$imgPath
         ]);
+        return redirect()->back();
     }
 
     /**

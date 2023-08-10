@@ -21,7 +21,10 @@ return [
     'email' => 'Email',
     'Home' => 'Home',
     'name' => 'Name',
+    'photo' => 'Photo',
+    'feed' => 'Feed Back',
     'book' => 'Book Now',
+    'Give Us FeedBack' => 'Give Us FeedBack',
     'broject-name' => 'Car-Washer',
 
 ];
