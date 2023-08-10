@@ -21,3 +21,23 @@
 <!-- Template Stylesheet -->
 <link href="{{ asset('Front-End') }}/css/style.css" rel="stylesheet">
 <link href="{{ asset('Front-End') }}/css/colors.scss" rel="stylesheet">
+
+{{--<style>--}}
+{{--    body {--}}
+{{--        direction: ltr;--}}
+{{--    }--}}
+{{--    .container {--}}
+{{--        text-align: right;--}}
+{{--        margin-right: 20px;--}}
+{{--        margin-left: auto;--}}
+{{--    }--}}
+
+{{--    /* LTR styles after conversion */--}}
+{{--    .rtl {--}}
+{{--        direction: rtl;--}}
+{{--        text-align: left;--}}
+{{--        margin-right: auto;--}}
+{{--        margin-left: 20px;--}}
+{{--    }--}}
+
+{{--</style>--}}

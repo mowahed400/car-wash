@@ -1,4 +1,8 @@
-<div class="service" id="service">
+<div class="service" id="service" style="direction:  @if (App::getLocale() == 'en')
+ltr
+@else
+rtl
+@endif">
     <div class="container">
         <div class="section-header text-center">
             <p>What We Do?</p>

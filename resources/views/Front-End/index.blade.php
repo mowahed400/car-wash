@@ -5,6 +5,7 @@
     </head>
 
     <body>
+
         <!-- Top Bar Start -->
         @include('Front-End.top-bar')
 
@@ -87,5 +88,13 @@
 
         <!-- Template Javascript -->
         <script src="{{ asset('Front-End') }}/js/main.js"></script>
+
+
+
+
+
+
+
+
     </body>
 </html>

@@ -1,4 +1,8 @@
-<div class="location" id="location">
+<div class="location" id="location" style="direction:  @if (App::getLocale() == 'en')
+ltr
+@else
+rtl
+@endif">
     <div class="container">
         <div class="row">
             <div class="col-lg-5">

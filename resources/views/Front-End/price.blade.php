@@ -1,4 +1,8 @@
-<div class="price" id="price">
+<div class="price" id="price" style="direction:  @if (App::getLocale() == 'en')
+ltr
+@else
+rtl
+@endif">
     <div class="container">
         <div class="section-header text-center">
             <p>Washing Plan</p>

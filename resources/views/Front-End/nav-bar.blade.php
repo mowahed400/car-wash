@@ -1,4 +1,8 @@
-<div class="nav-bar">
+<div class="nav-bar" style="direction:  @if (App::getLocale() == 'en')
+ltr
+@else
+rtl
+@endif">
     <div class="container">
         <nav class="navbar navbar-expand-lg bg-dark navbar-dark">
             <a href="#" class="navbar-brand">MENU</a>
@@ -16,21 +20,30 @@
                     <a href="#footer" class="nav-item nav-link">{{trans('front.contact')}}</a>
                 </div>
                 <div class="ml-auto">
-                    <a class="btn btn-custom" href="#price">{{trans('front.Home')}}</a>
+                    <a class="btn btn-custom" href="#price">Book Now</a>
                 </div>
 
-                <div class="ml-auto dropdown">
-                    <button class="btn btn-secondary dropdown-toggle" type="button" id="dropdownMenuButton" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false">
-                        {{ LaravelLocalization::getCurrentLocale() }}
-                    </button>
-                    <div class="dropdown-menu" aria-labelledby="dropdownMenuButton">
-                        @foreach(LaravelLocalization::getSupportedLocales() as $localeCode => $properties)
-                            <a class="dropdown-item" rel="alternate" hreflang="{{ $localeCode }}" href="{{ LaravelLocalization::getLocalizedURL($localeCode, null, [], true) }}">
-                                {{ $properties['native'] }}
+
+                <div class="ml-auto">
+
+                        @if(LaravelLocalization::getCurrentLocale() == 'ar')
+                            <a  class="btn btn-custom"  role="button" id="direction-toggle" rel="alternate" hreflang="en" href="{{ LaravelLocalization::getLocalizedURL('en', null, [], true) }}">
+                                en
                             </a>
-                        @endforeach
-                    </div>
+                        @else
+                            <a  class="btn btn-custom"  id="direction-toggle" rel="alternate" hreflang="ar" href="{{ LaravelLocalization::getLocalizedURL('ar', null, [], true) }}">
+                                ar
+                            </a>
+                        @endif
+
                 </div>
+
+
+
+
+
+
+
             </div>
         </nav>
     </div>

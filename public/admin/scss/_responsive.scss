@@ -80,10 +80,10 @@
         margin-top: -140px;
     }
 
-    .bootstrap-touchspin  { 
-     .input-group-btn-vertical { 
+    .bootstrap-touchspin  {
+     .input-group-btn-vertical {
         width: 9%;
-      } 
+      }
      }
     .lg-mb-10 {margin-bottom:10px !important;}
     .lg-mt-10 {margin-top:10px !important;}
@@ -204,7 +204,7 @@
                     margin-right:20px !important;
                 }
             }
-            
+
         }
 
     }
@@ -213,7 +213,7 @@
             &:before {
                 left:0;
             }
-           
+
         }
     }
 
@@ -248,7 +248,7 @@
         }
 
     }
-     .admin-header.navbar.fixed-top + .container-fluid { 
+     .admin-header.navbar.fixed-top + .container-fluid {
         padding-top: 4.7rem;
       }
 
@@ -262,8 +262,8 @@
           }
 
         }
-    .repeater { 
-        .form-control { 
+    .repeater {
+        .form-control {
             margin-bottom: 10px;
          }
          .btn-block {
@@ -376,23 +376,23 @@
         }
     }
     .tab {
-         .nav.nav-tabs { 
-              li  { 
+         .nav.nav-tabs {
+              li  {
                 margin-bottom: 5px;
-                  a.active { 
+                  a.active {
                      border: 1px solid $border-color;
 
-                     &:hover { 
-                           border: 1px solid $border-color; 
+                     &:hover {
+                           border: 1px solid $border-color;
                       }
-                   }  
-               }   
+                   }
+               }
           }
     }
 
-    
-     .repeater-file { 
-        .custom-file-label { 
+
+     .repeater-file {
+        .custom-file-label {
             margin-bottom: 10px;
          }
       }
@@ -511,7 +511,7 @@
     .fc .fc-button-group > * {
         float: none;
         margin-bottom: 0px !important;
-        display: inline-block; 
+        display: inline-block;
         padding: 6px 26px !important;
     }
     .pagination {
@@ -577,6 +577,7 @@
 
                 .dropdown-menu {
                     left: 0 !important;
+
                 }
 
             }
@@ -651,31 +652,31 @@
         margin-top: 30px;
     }
 
-    .wizard { 
+    .wizard {
         .steps {
 
-            ul { 
-                li { 
-                     width: 100%; 
+            ul {
+                li {
+                     width: 100%;
                  }
              }
         }
      }
-     .display-1 { 
+     .display-1 {
         font-size: 4rem;
       }
-      .display-2 { 
+      .display-2 {
         font-size: 3rem;
       }
-      .display-3 { 
+      .display-3 {
         font-size: 2rem;
       }
-      .display-4 { 
+      .display-4 {
         font-size: 1em;
       }
-      .button + .button { 
+      .button + .button {
         margin-left: 0;
-        margin-bottom: 4px; 
+        margin-bottom: 4px;
     }
     .social-icons li {
         margin: 0px 0px 8px 0px;
@@ -756,7 +757,7 @@
         }
     }
     .pagination {
-        .page-item { 
+        .page-item {
             .page-link {
                 padding:1.0rem 0.7rem;
             }

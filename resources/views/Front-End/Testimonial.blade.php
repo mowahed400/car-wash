@@ -15,36 +15,7 @@
                     </p>
                 </div>
             </div>
-            <div class="testimonial-item">
-                <img src="{{ asset('Front-End') }}/img/testimonial-2.jpg" alt="Image">
-                <div class="testimonial-text">
-                    <h3>{{trans('front.Client Name')}}</h3>
-                    <h4>{{trans('front.Profession')}}</h4>
-                    <p>
-                        Lorem ipsum dolor sit amet elit. Phasel preti mi facilis ornare velit non vulputa. Aliqu metus tortor auctor gravid
-                    </p>
-                </div>
-            </div>
-            <div class="testimonial-item">
-                <img src="{{ asset('Front-End') }}/img/testimonial-3.jpg" alt="Image">
-                <div class="testimonial-text">
-                    <h3>{{trans('front.Client Name')}}</h3>
-                    <h4>{{trans('front.Profession')}}</h4>
-                    <p>
-                        Lorem ipsum dolor sit amet elit. Phasel preti mi facilis ornare velit non vulputa. Aliqu metus tortor auctor gravid
-                    </p>
-                </div>
-            </div>
-            <div class="testimonial-item">
-                <img src="{{ asset('Front-End') }}/img/testimonial-4.jpg" alt="Image">
-                <div class="testimonial-text">
-                    <h3>{{trans('front.Client Name')}}</h3>
-                    <h4>{{trans('front.Profession')}}</h4>
-                    <p>
-                        Lorem ipsum dolor sit amet elit. Phasel preti mi facilis ornare velit non vulputa. Aliqu metus tortor auctor gravid
-                    </p>
-                </div>
-            </div>
+           
         </div>
     </div>
 </div>
