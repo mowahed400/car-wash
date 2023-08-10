@@ -9,10 +9,10 @@ return [
     'Wet Cleaning'=>' التنظيف الرطب',
     'Oil Changing'=>'تغيير الزيت',
     'Brake Reparing'=>'إصلاح الفرامل',
-    'Service Points'=>'ماذا نفعل ',
-    'Engineers & Workers'=>'ماذا نفعل ',
-    'Happy Clients'=>'ماذا نفعل ',
-    'Projects Completed'=>'ماذا نفعل ',
+    'Service Points'=>'نقاط الخدمة',
+    'Engineers & Workers'=>'المهندسين والعمال',
+    'Happy Clients'=>'عملاء سعداء',
+    'Projects Completed'=>'المشاريع المنجزة',
 
 
 ];

@@ -6,7 +6,7 @@
                     <i class="fa fa-map-marker-alt"></i>
                     <div class="facts-text">
                         <h3 data-toggle="counter-up">25</h3>
-                        <p>{{trans('servces.WHAT WE DO')}}</p>
+                        <p>{{trans('servces.Service Points')}}</p>
                     </div>
                 </div>
             </div>
