@@ -23,9 +23,16 @@ class WashingPointController extends Controller
      *
      * @return \Illuminate\Http\Response
      */
-    public function create()
+    public function store(Request $request)
     {
-        //
+        WashingPoint::create([
+            'title'=>$request->title,
+            'address'=>$request->address,
+            'number'=>$request->number,
+
+        ]);
+        return redirect()->back();
+
     }
 
     /**
@@ -34,10 +41,7 @@ class WashingPointController extends Controller
      * @param  \Illuminate\Http\Request  $request
      * @return \Illuminate\Http\Response
      */
-    public function store(Request $request)
-    {
-        //
-    }
+
 
     /**
      * Display the specified resource.
@@ -68,9 +72,16 @@ class WashingPointController extends Controller
      * @param  \App\Models\WashingPoint  $washingPoint
      * @return \Illuminate\Http\Response
      */
-    public function update(Request $request, WashingPoint $washingPoint)
+    public function update(Request $request,$id)
     {
-        //
+        $Washings=WashingPoint::findorfail($id);
+        $Washings->update([
+           'title'=>$request->title,
+            'address'=>$request->address,
+            'number'=>$request->number
+
+        ]);
+             return redirect()->back();
     }
 
     /**
@@ -79,8 +90,9 @@ class WashingPointController extends Controller
      * @param  \App\Models\WashingPoint  $washingPoint
      * @return \Illuminate\Http\Response
      */
-    public function destroy(WashingPoint $washingPoint)
+    public function destroy($id)
     {
-        //
-    }
+        WashingPoint::find($id)->delete();
+        return redirect()->back();
+       }
 }

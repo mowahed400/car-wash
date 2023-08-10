@@ -3,6 +3,7 @@
 namespace App\Http\Controllers;
 
 use App\Models\Connect;
+use App\Models\WashingPoint;
 use Illuminate\Http\Request;
 
 class ConnectController extends Controller
@@ -36,6 +37,7 @@ class ConnectController extends Controller
      */
     public function store(Request $request)
     {
+
 
     }
 
@@ -95,10 +97,10 @@ class ConnectController extends Controller
      */
     public function destroy($id)
     {
-        Connect::find($id)->delete();
+
+        WashingPoint::findorfail($id)->delete();
 
         return redirect()->back();
-
-        }
+    }
 
 }

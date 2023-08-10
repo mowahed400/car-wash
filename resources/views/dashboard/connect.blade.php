@@ -13,7 +13,7 @@
             <div class="col-sm-6">
                 <h4 class="mb-0"> {{trans('conect.connect')}}</h4>
             </div>
-           
+
         </div>
     </div>
     <!-- breadcrumb -->
