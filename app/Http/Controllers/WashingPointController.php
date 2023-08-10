@@ -15,7 +15,7 @@ class WashingPointController extends Controller
     public function index()
     {
         $Washings=WashingPoint::all();
-        return view('dashboard.address.WashingPoint',compact('Washings'));
+        return view('dashboard.points.index',compact('Washings'));
     }
 
     /**
@@ -26,10 +26,9 @@ class WashingPointController extends Controller
     public function store(Request $request)
     {
         WashingPoint::create([
-            'title'=>$request->title,
-            'address'=>$request->address,
+           'title' => ['en' => $request->title_en, 'ar' => $request->title_ar],
+            'address' => ['en' => $request->title_en, 'ar' => $request->title_ar],
             'number'=>$request->number,
-
         ]);
         return redirect()->back();
 
@@ -74,11 +73,13 @@ class WashingPointController extends Controller
      */
     public function update(Request $request,$id)
     {
-        $Washings=WashingPoint::findorfail($id);
-        $Washings->update([
-           'title'=>$request->title,
-            'address'=>$request->address,
-            'number'=>$request->number
+
+
+        $points = WashingPoint::findOrFail($request->id);
+        $points->update([
+            $points->title = ['en' => $request->title_en, 'ar' => $request->title_ar],
+            $points->address = ['en' => $request->title_en, 'ar' => $request->title_ar],
+            $points->number = $request->number,
 
         ]);
              return redirect()->back();
@@ -90,9 +91,9 @@ class WashingPointController extends Controller
      * @param  \App\Models\WashingPoint  $washingPoint
      * @return \Illuminate\Http\Response
      */
-    public function destroy($id)
+    public function destroy(Request $request)
     {
-        WashingPoint::find($id)->delete();
+        $points = WashingPoint::findOrFail($request->id)->delete();
         return redirect()->back();
        }
 }

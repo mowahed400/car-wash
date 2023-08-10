@@ -32,5 +32,6 @@ Route::group(['middleware' => ['auth']], function () {
         Route::resource('mess', MessageController::class);
         Route::resource('feed', ReviewController::class);
         Route::resource('connect', ConnectController::class);
+        Route::resource('points', WashingPointController::class);
     }
 );

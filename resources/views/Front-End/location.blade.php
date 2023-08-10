@@ -11,46 +11,18 @@ rtl
                     <h2>{{trans('front.Car Washing & Care Points')}}</h2>
                 </div>
                 <div class="row">
+                    @foreach($points as $point)
                     <div class="col-md-6">
                         <div class="location-item">
                             <i class="fa fa-map-marker-alt"></i>
                             <div class="location-text">
-                                <h3>Car Washing Point</h3>
-                                <p>123 Street, New York, USA</p>
-                                <p><strong>Call:</strong>+012 345 6789</p>
+                                <h3>{{$point->title}}</h3>
+                                <p>{{$point->address}}</p>
+                                <p>{{$point->number}}</p>
                             </div>
                         </div>
                     </div>
-                    <div class="col-md-6">
-                        <div class="location-item">
-                            <i class="fa fa-map-marker-alt"></i>
-                            <div class="location-text">
-                                <h3>Car Washing Point</h3>
-                                <p>123 Street, New York, USA</p>
-                                <p><strong>Call:</strong>+012 345 6789</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="location-item">
-                            <i class="fa fa-map-marker-alt"></i>
-                            <div class="location-text">
-                                <h3>Car Washing Point</h3>
-                                <p>123 Street, New York, USA</p>
-                                <p><strong>Call:</strong>+012 345 6789</p>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="location-item">
-                            <i class="fa fa-map-marker-alt"></i>
-                            <div class="location-text">
-                                <h3>Car Washing Point</h3>
-                                <p>123 Street, New York, USA</p>
-                                <p><strong>Call:</strong>+012 345 6789</p>
-                            </div>
-                        </div>
-                    </div>
+                    @endforeach
                 </div>
             </div>
             <div class="col-lg-7">

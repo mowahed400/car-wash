@@ -3,7 +3,7 @@
 @section('css')
 
     @section('title')
-        empty
+        {{trans('mess.contact')}}
     @stop
 @endsection
 @section('page-header')

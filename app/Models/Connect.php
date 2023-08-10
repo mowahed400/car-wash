@@ -8,7 +8,7 @@ use Spatie\Translatable\HasTranslations;
 
 class Connect extends Model
 {
-    use HasTranslations;
+
     use HasFactory;
     protected $guarded;
 }
