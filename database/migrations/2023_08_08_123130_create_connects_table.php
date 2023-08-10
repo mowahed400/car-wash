@@ -21,7 +21,6 @@ return new class extends Migration
             $table->string('twlinke');
             $table->string('inslinke');
             $table->string('usermail');
-            $table->string('cover');
             $table->timestamps();
         });
     }
