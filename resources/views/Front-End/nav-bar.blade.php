@@ -20,19 +20,19 @@ rtl
                     <a href="#footer" class="nav-item nav-link">{{trans('front.contact')}}</a>
                 </div>
                 <div class="ml-auto">
-                    <a class="btn btn-custom" href="#price">Book Now</a>
+                    <a class="btn btn-custom" href="#price"> {{trans('front.Book Now')}} </a>
                 </div>
 
 
                 <div class="ml-auto">
 
                         @if(LaravelLocalization::getCurrentLocale() == 'ar')
-                            <a  class="btn btn-custom"  role="button" id="direction-toggle" rel="alternate" hreflang="en" href="{{ LaravelLocalization::getLocalizedURL('en', null, [], true) }}">
-                                en
+                            <a  class="btn btn-custom"    rol e="button" id="direction-toggle" rel="alternate" hreflang="en" href="{{ LaravelLocalization::getLocalizedURL('en', null, [], true) }}">
+                                EN
                             </a>
                         @else
-                            <a  class="btn btn-custom"  id="direction-toggle" rel="alternate" hreflang="ar" href="{{ LaravelLocalization::getLocalizedURL('ar', null, [], true) }}">
-                                ar
+                            <a  class="btn btn-custom"   id="direction-toggle" rel="alternate" hreflang="ar" href="{{ LaravelLocalization::getLocalizedURL('ar', null, [], true) }}">
+                                AR
                             </a>
                         @endif
 

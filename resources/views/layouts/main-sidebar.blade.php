@@ -22,7 +22,7 @@
                             <div class="clearfix"></div>
                         </a>
                         <ul id="chart" class="collapse" data-parent="#sidebarnav">
-                            <li> <a href="{{route('Washing.index')}}">Chart.js</a> </li>
+                            <li> <a href="">Chart.js</a> </li>
 
                         </ul>
                     </li>

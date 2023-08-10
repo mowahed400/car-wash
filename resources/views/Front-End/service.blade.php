@@ -3,12 +3,12 @@ ltr
 @else
 rtl
 @endif">
-    <div class="container">
+    <div class="container" >
         <div class="section-header text-center">
-            <p>{{trans('servces.Service Points')}}?</p>
+            <p>{{trans('servces.Service Points')}}</p>
             <h2>{{trans('servces.Premium Washing Services')}}</h2>
         </div>
-        <div class="row">
+        <div class="row" >
             <div class="col-lg-3 col-md-6">
                 <div class="service-item">
                     <i class="flaticon-car-wash-1"></i>

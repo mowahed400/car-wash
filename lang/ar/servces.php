@@ -9,7 +9,7 @@ return [
     'Wet Cleaning'=>' التنظيف الرطب',
     'Oil Changing'=>'تغيير الزيت',
     'Brake Reparing'=>'إصلاح الفرامل',
-    'Service Points'=>'ماذا نفعل ',
+    'Service Points'=>'اماكن الخدمه ؟ ',
     'Engineers & Workers'=>'ماذا نفعل ',
     'Happy Clients'=>'ماذا نفعل ',
     'Projects Completed'=>'ماذا نفعل ',

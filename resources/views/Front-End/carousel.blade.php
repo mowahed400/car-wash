@@ -1,5 +1,5 @@
 <div class="carousel" id="carousel">
-    <div class="container-fluid">
+    <div class="container-fluid droid-arabic-kufi">
         <div class="owl-carousel">
             <div class="carousel-item">
                 <div class="carousel-img">

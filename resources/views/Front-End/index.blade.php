@@ -4,7 +4,9 @@
         @include('Front-End.head')
     </head>
 
-    <body>
+    <body @if(LaravelLocalization::getCurrentLocale() == 'ar')
+              class="droid-arabic-kufi"
+    @endif >
 
         <!-- Top Bar Start -->
         @include('Front-End.top-bar')
@@ -83,8 +85,8 @@
         <script src="{{ asset('Front-End') }}/lib/counterup/counterup.min.js"></script>
 
         <!-- Contact Javascript File -->
-        <script src="mail/jqBootstrapValidation.min.js"></script>
-        <script src="mail/contact.js"></script>
+        <script src="{{ asset('Front-End') }}/mail/jqBootstrapValidation.min.js"></script>
+        <script src="{{ asset('Front-End') }}/mail/contact.js"></script>
 
         <!-- Template Javascript -->
         <script src="{{ asset('Front-End') }}/js/main.js"></script>
