@@ -6,7 +6,7 @@
         </div>
         <div class="owl-carousel testimonials-carousel">
             <div class="testimonial-item">
-                <img src="{{ asset('Front-End') }}/img/testimonial-1.jpg" alt="Image">
+                <img src="{{ asset('Front-End/img/testimonial-1.jpg') }}" alt="Image">
                 <div class="testimonial-text">
                     <h3>{{trans('front.Client Name')}}</h3>
                     <h4>{{trans('front.Profession')}}</h4>
@@ -15,7 +15,7 @@
                     </p>
                 </div>
             </div>
-           
+
         </div>
     </div>
 </div>
