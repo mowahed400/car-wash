@@ -27,9 +27,10 @@ Route::resource('feedback',ReviewController::class);
 
 Route::group(['middleware' => ['auth']], function () {
 
-        Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
-        Route::resource('mess', MessageController::class);
-        Route::resource('feed', ReviewController::class);
-        Route::resource('connect', ConnectController::class);
-    }
+    Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+    Route::resource('mess', MessageController::class);
+    Route::resource('feed', ReviewController::class);
+    Route::resource('connect', ConnectController::class);
+    Route::resource('Washing', WashingPointController::class);
+}
 );
