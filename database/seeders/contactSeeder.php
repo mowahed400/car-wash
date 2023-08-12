@@ -18,6 +18,7 @@ class contactSeeder extends Seeder
         DB::table('connects')->insert([
             'email'     => 'auto-wash@gmail.com',
             'worktime'      => '18h',
+            'workhourenglish'      => '18h',
             'twlinke'      => 'https://twitter.com/',
             'whats'      => '+966955551',
             'inslinke'      => 'https://www.instagram.com/',

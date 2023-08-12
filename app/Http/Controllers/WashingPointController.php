@@ -27,7 +27,7 @@ class WashingPointController extends Controller
     {
         WashingPoint::create([
            'title' => ['en' => $request->title_en, 'ar' => $request->title_ar],
-            'address' => ['en' => $request->title_en, 'ar' => $request->title_ar],
+            'address' => ['en' => $request->address_en, 'ar' => $request->address_ar],
             'number'=>$request->number,
         ]);
         return redirect()->back();
@@ -78,7 +78,7 @@ class WashingPointController extends Controller
         $points = WashingPoint::findOrFail($request->id);
         $points->update([
             $points->title = ['en' => $request->title_en, 'ar' => $request->title_ar],
-            $points->address = ['en' => $request->title_en, 'ar' => $request->title_ar],
+            $points->address = ['en' => $request->address_en, 'ar' => $request->address_ar],
             $points->number = $request->number,
 
         ]);

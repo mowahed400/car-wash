@@ -9,6 +9,7 @@
                     </a>
                 </div>
             </div>
+            @foreach($contactus as $contact) @endforeach
             <div class="col-lg-8 col-md-7 d-none d-lg-block">
                 <div class="row">
                     <div class="col-4">
@@ -17,30 +18,30 @@
                                 <i class="far fa-clock"></i>
                             </div>
                             <div class="top-bar-text">
-                                <h3>Opening Hour</h3>
-                                <p>Mon - Fri, 8:00 - 9:00</p>
+                                <h3>{{trans('front.worktime')}}</h3>
+                                <p>{{$contact->worktime}}</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-4">
                         <div class="top-bar-item">
                             <div class="top-bar-icon">
-                                <i class="fa fa-phone-alt"></i>
+                                <a  href="callto:{{$contact->whats}}"><i class="fa fa-phone-alt"></i></a>
                             </div>
                             <div class="top-bar-text">
-                                <h3>Call Us</h3>
-                                <p>+012 345 6789</p>
+                                <h3>{{trans('front.Call')}}</h3>
+                                <p>+{{$contact->whats}}</p>
                             </div>
                         </div>
                     </div>
                     <div class="col-4">
                         <div class="top-bar-item">
                             <div class="top-bar-icon">
-                                <i class="far fa-envelope"></i>
+                                <a  href="mailto:{{$contact->email}}"><i class="far fa-envelope"></i></a>
                             </div>
                             <div class="top-bar-text">
-                                <h3>Email Us</h3>
-                                <p>info@example.com</p>
+                                <h3>{{trans('front.Email')}}</h3>
+                                <p>{{$contact->email}}</p>
                             </div>
                         </div>
                     </div>

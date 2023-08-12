@@ -8,6 +8,8 @@ return [
     'usermail'=>'usermail',
     'cover'=>'cover',
     'Confirm'=>'Confirm',
+    'start'=>'Open ',
+    'end'=>'Close',
     'connect'=>'connect us',
 
 ];

@@ -49,5 +49,9 @@ return [
     'Where To Find Us' => 'اين تجدنا',
     'Washing Points' => 'مكاننا',
     'Car Washing & Care Points' => 'غسيل السيارات & خدمات السيارات',
+    'worktime' => 'ساعات العمل',
+    'Call' => 'اتصل بنا ',
+    'Email' => 'راسلنا',
+
 
 ];

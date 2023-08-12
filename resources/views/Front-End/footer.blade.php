@@ -6,8 +6,8 @@
                 <div class="footer-contact">
                     <h2>{{trans('front.get')}}</h2>
                     @foreach($contactus as $contact) @endforeach
-                    <p><i class="fa fa-map-marker-alt"></i>{{$contact->worktime}}</p>
-                    <p><i class="fa fa-phone-alt"></i>{{$contact->whats}}</p>
+                    <p><i class="far fa-clock"></i>{{$contact->worktime}}</p>
+                    <p><i class="fa fa-phone-alt"></i>+{{$contact->whats}}</p>
                     <p><i class="fa fa-envelope"></i>{{$contact->email}}</p>
                     <div class="footer-social">
                         <a class="btn" href="{{$contact->twlinke}}"><i class="fab fa-twitter"></i></a>

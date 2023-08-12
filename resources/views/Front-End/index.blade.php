@@ -68,7 +68,8 @@
         <!-- Footer End -->
 
         <!-- Back to top button -->
-        <a href="#" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
+        @foreach($contactus as $contact) @endforeach
+        <a href="https://api.whatsapp.com/send?phone={{$contact->whats}}" class="back-to-top"><i class="fa fa-chevron-up"></i></a>
 
         <!-- Pre Loader -->
         <div id="loader" class="show">

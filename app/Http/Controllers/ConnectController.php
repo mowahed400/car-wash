@@ -76,6 +76,7 @@ class ConnectController extends Controller
         $Connects->update([
             'whats' => $request->whats,
             'worktime' => $request->worktime,
+            'workhourenglish' => $request->workhourenglish,
             'email' => $request->email,
             'twlinke' => $request->twlinke,
             'inslinke' => $request->inslinke,

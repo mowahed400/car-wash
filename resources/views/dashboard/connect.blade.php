@@ -36,9 +36,14 @@
                     </div>
 
                         <div class="mb-3">
-                        <label for="exampleFormControlInput2" class="form-label">{{trans('conect.worktime')}}</label>
+                        <label for="exampleFormControlInput2" class="form-label">{{trans('conect.start')}}</label>
                         <input type="text" class="form-control" id="exampleFormControlInput2" name="worktime"value="{{$Connect->worktime}}">
                     </div>
+
+                            <div class="mb-3">
+                                <label for="exampleFormControlInput2" class="form-label">{{trans('conect.end')}}</label>
+                                <input type="text" class="form-control" id="exampleFormControlInput2" name="workhourenglish"value="{{$Connect->workhourenglish}}">
+                            </div>
 
                         <div class="mb-3">
                         <label for="exampleFormControlInput3" class="form-label">{{trans('conect.twlinke')}}</label>
