@@ -10,6 +10,8 @@ return [
     'Client Name' => 'اسم العميل',
     'Profession' => 'مهنة',
     'get' => 'اتصل بنا',
+    'start_at' => 'نبدأ من',
+    'end_at' => 'نغلق في',
     'links' => 'روابط مهمة',
     'about' => 'معلومات عنا',
     'contact' => 'اتصل بنا',

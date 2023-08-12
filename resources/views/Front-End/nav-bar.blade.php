@@ -13,7 +13,7 @@ rtl
             <div class="collapse navbar-collapse justify-content-between" id="navbarCollapse">
                 <div class="navbar-nav mr-auto">
                     <a href="#carousel" class="nav-item nav-link active">{{trans('front.Home')}}</a>
-                    <a href="#about" class="nav-item nav-link">{{trans('front.about')}}</a>
+{{--                    <a href="#about" class="nav-item nav-link">{{trans('front.about')}}</a>--}}
                     <a href="#service" class="nav-item nav-link">{{trans('front.service')}}</a>
                     <a href="#price" class="nav-item nav-link">{{trans('front.price')}}</a>
                     <a href="#location" class="nav-item nav-link">{{trans('front.location')}}</a>

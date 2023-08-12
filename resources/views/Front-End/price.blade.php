@@ -109,7 +109,7 @@ rtl
 
                         <div class="col">
                             <label class="radio-container">
-                                <input type="radio" name="cartype" value="Large">
+                                <input type="radio" name="cartype" value="Medium">
                                 <span class="radio-icon"></span>
                                 <img src="{{ asset('Front-End') }}/img/car2.png" style="width: 80% ; height: 80%">
                                 <p>{{trans('front.Medium')}}</p>
@@ -118,7 +118,7 @@ rtl
 
                         <div class="col">
                             <label class="radio-container">
-                                <input type="radio" name="cartype" value="Large">
+                                <input type="radio" name="cartype" value="Small">
                                 <span class="radio-icon"></span>
                                 <img src="{{ asset('Front-End') }}/img/car3.png" style="width: 80% ; height: 80%">
                                 <p>{{trans('front.Small')}}</p>
