@@ -10,13 +10,13 @@ rtl
                     <p>{{trans('front.Washing Points')}}</p>
                     <h2>{{trans('front.Car Washing & Care Points')}}</h2>
                 </div>
-                <div class="row">
+                <div class="row" >
                     @foreach($points as $point)
-                    <div class="col-md-6">
+                    <div class="col-md-6" >
                         <div class="location-item">
                             <i class="fa fa-map-marker-alt"></i>
                             <div class="location-text">
-                                <h3>{{$point->title}}</h3>
+                                <h3 >{{$point->title}}</h3>
                                 <p>{{$point->address}}</p>
                                 <p>{{$point->number}}</p>
                             </div>

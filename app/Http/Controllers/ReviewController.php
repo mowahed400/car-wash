@@ -69,6 +69,7 @@ class ReviewController extends Controller
             'feedback'=>$reviews->feedback,
             'image'=>$reviews->image
         ]);
+        $reviews->delete();
 
         return redirect()->back();
     }

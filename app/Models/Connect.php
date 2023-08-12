@@ -11,5 +11,5 @@ class Connect extends Model
 
     use HasFactory;
     protected $table='connects';
-    protected $fillable=['whats','worktime','email','twlinke','inslinke','workhourenglish'];
+    protected $fillable=['whats','worktime','email','twlinke','inslinke','open_at', 'close_at'];
 }

@@ -6,12 +6,11 @@
                 <div class="footer-contact">
                     <h2>{{trans('front.get')}}</h2>
                     @foreach($contactus as $contact) @endforeach
-                    <p><i class="far fa-clock"></i>{{$contact->worktime}}</p>
-                    <p><i class="fa fa-phone-alt"></i>+{{$contact->whats}}</p>
+
                     <p><i class="fa fa-map-marker-alt"></i>@if (App::getLocale() == 'en')
-                        Opens At : {{$contact->worktime}} PM &nbsp;&nbsp; |&nbsp;&nbsp; Close At : {{$contact->worktime}} AM
+                        Opens At : {{$contact->open_at}} PM &nbsp;&nbsp; |&nbsp;&nbsp; Close At : {{$contact->close_at}} AM
                         @else
-                        نفتح في : {{$contact->worktime}} م &nbsp;&nbsp; | &nbsp;&nbsp; نغلق في : {{$contact->worktime}} ص
+                        نفتح في : {{$contact->open_at}} م &nbsp;&nbsp; | &nbsp;&nbsp; نغلق في : {{$contact->close_at}} ص
                         @endif</p>
                     <p><i class="fa fa-phone-alt"></i>{{$contact->whats}}</p>
                     <p><i class="fa fa-envelope"></i>{{$contact->email}}</p>

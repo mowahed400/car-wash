@@ -17,7 +17,8 @@ return new class extends Migration
             $table->id();
             $table->bigInteger('whats');
             $table->string('worktime');
-            $table->string('workhourenglish');
+            $table->string('open_at');
+            $table->string('close_at');
             $table->string('email');
             $table->string('twlinke');
             $table->string('inslinke');
