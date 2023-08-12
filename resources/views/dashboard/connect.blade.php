@@ -55,14 +55,6 @@
                         <input type="email" class="form-control" id="exampleFormControlInput5" name="email"value="{{$Connect->email}}">
                     </div>
 
-                        <div class="mb-3">
-                        <label for="exampleFormControlInput6" class="form-label">{{trans('conect.usermail')}}</label>
-                        <input type="text" class="form-control" id="exampleFormControlInput6" name="usermail"value="{{$Connect->usermail}}">
-                    </div>
-                    <div class="mb-3">
-                        <label for="exampleFormControlTextarea1" class="form-label">{{trans('conect.cover')}}</label>
-                        <textarea class="form-control" id="exampleFormControlTextarea1" rows="3" name="cover">{{$Connect->cover}}</textarea>
-                    </div>
 
                             <div class="col-auto">
                                 <button type="submit" class="btn btn-success">{{trans('conect.Confirm')}}</button>
