@@ -1,6 +1,6 @@
 <div class="footer" id="footer">
     <div class="container">
-        <div class="row" >
+        <div class="row">
 
             <div class="col-lg-4 col-md-6">
                 <div class="footer-contact">
@@ -8,6 +8,12 @@
                     @foreach($contactus as $contact) @endforeach
                     <p><i class="far fa-clock"></i>{{$contact->worktime}}</p>
                     <p><i class="fa fa-phone-alt"></i>+{{$contact->whats}}</p>
+                    <p><i class="fa fa-map-marker-alt"></i>@if (App::getLocale() == 'en')
+                        Opens At : {{$contact->worktime}} PM &nbsp;&nbsp; |&nbsp;&nbsp; Close At : {{$contact->worktime}} AM
+                        @else
+                        نفتح في : {{$contact->worktime}} م &nbsp;&nbsp; | &nbsp;&nbsp; نغلق في : {{$contact->worktime}} ص
+                        @endif</p>
+                    <p><i class="fa fa-phone-alt"></i>{{$contact->whats}}</p>
                     <p><i class="fa fa-envelope"></i>{{$contact->email}}</p>
                     <div class="footer-social">
                         <a class="btn" href="{{$contact->twlinke}}"><i class="fab fa-twitter"></i></a>
@@ -18,7 +24,6 @@
             <div class="col-lg-4 col-md-6">
                 <div class="footer-link">
                     <h2>{{trans('front.links')}}</h2>
-                    <a href="#about">{{trans('front.about')}}</a>
                     <a href="#footer">{{trans('front.contact')}}</a>
                     <a href="#service">{{trans('front.service')}}</a>
                     <a href="#location">{{trans('front.location')}}</a>

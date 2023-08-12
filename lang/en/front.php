@@ -10,6 +10,8 @@ return [
     'Client Name' => 'Client Nam',
     'Profession' => 'Profession',
     'get' => 'Contact Us',
+    'start_at' => 'Start at',
+    'end_at' => 'End at',
     'links' => 'Important Links',
     'about' => 'About Us',
     'contact' => 'Contact us',
