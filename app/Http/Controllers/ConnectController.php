@@ -74,16 +74,11 @@ class ConnectController extends Controller
     {
         $Connects= Connect::find(1);
         $Connects->update([
-
             'whats' => $request->whats,
             'worktime' => $request->worktime,
             'email' => $request->email,
             'twlinke' => $request->twlinke,
             'inslinke' => $request->inslinke,
-            'usermail' => $request->usermail,
-            'cover' => $request->cover,
-
-
         ]);
              return redirect()->back();
 
@@ -98,9 +93,6 @@ class ConnectController extends Controller
     public function destroy($id)
     {
 
-        WashingPoint::findorfail($id)->delete();
-
-        return redirect()->back();
     }
 
 }

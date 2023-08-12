@@ -15,12 +15,11 @@ return new class extends Migration
     {
         Schema::create('connects', function (Blueprint $table) {
             $table->id();
-            $table->integer('whats');
+            $table->bigInteger('whats');
             $table->string('worktime');
             $table->string('email');
             $table->string('twlinke');
             $table->string('inslinke');
-            $table->string('usermail');
             $table->timestamps();
         });
     }

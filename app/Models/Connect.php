@@ -10,5 +10,6 @@ class Connect extends Model
 {
 
     use HasFactory;
-    protected $guarded;
+    protected $table='connects';
+    protected $fillable=['whats','worktime','email','twlinke','inslinke'];
 }
