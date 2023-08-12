@@ -67,7 +67,8 @@
 
 
                                 <td style="align-content: center">
-                                    <p class="fw-normal mb-1">{{$mes->color}}</p>
+
+                                    <p   style="color:{{$mes->color}};  background-color: {{$mes->color}}; width: 50px; hight: 50px">.</p>
 
                                 </td>
 

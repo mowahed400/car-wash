@@ -101,9 +101,10 @@ class ReviewController extends Controller
      * @param  \App\Models\Review  $review
      * @return \Illuminate\Http\Response
      */
-    public function destroy(Review $review)
+    public function destroy(Request $request)
     {
-        //
+        $points = Review::findOrFail($request->id)->delete();
+        return redirect()->back();
     }
 
 

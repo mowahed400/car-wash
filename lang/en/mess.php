@@ -26,6 +26,8 @@ return [
     'Processes'=>'Processes ',
     'delete'=>'Delete ',
     'logout'=>'logout ',
+    'accept'=>'accept ',
+    'procedures'=>'procedures',
     'title_ar'=>'Zone In Arabic ',
     'title_en'=>'Zone In English ',
     'address_ar'=>'Address In Detail In Arabic ',

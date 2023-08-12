@@ -6,7 +6,7 @@ return [
     'Exterior & Interior Washing' => 'Exterior & Interior Washing',
     'Explore More' => 'Explore More',
     'Testimonial' => 'Feedback',
-    'What our clients say' => 'What our clients sa',
+    'What our clients say' => 'What our clients say',
     'Client Name' => 'Client Nam',
     'Profession' => 'Profession',
     'get' => 'Contact Us',

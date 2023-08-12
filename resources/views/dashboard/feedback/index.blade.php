@@ -40,136 +40,89 @@
                     <tr>
 
                         <th style="width: 25%">{{trans('mess.name')}}</th>
-                        <th style="width: 25%">{{trans('mess.feed')}}</th>
+                        <th style="width: 40%">{{trans('mess.feed')}}</th>
                         <th style="width: 25%">{{trans('mess.image')}}</th>
-                        <th style="width: 25%">عمليات</th>
+                        <th style="width: 10%">{{trans('mess.procedures')}}</th>
 
                     </tr>
                     </thead>
                     <tbody>
                     @foreach($reviews as $review)
 
-
-
-
-
-
-                                <td style="align-content: center">
-                                    <p class="fw-normal mb-1">{{$review->name}}</p>
-
-                                </td>
-
-
-                                <td style="align-content: center">
-                                    <p class="fw-normal mb-1">{{$review->feedback}}</p>
-
-                                </td>
-
-
-
-                                <td style="align-content: center">
-                                <img style="width: 40%"
-                                     @if($review->image == null)
-                                         src="{{asset('assets/images/no_user.png')}}" class="testimonial-img" alt=""
-                                     @else
-                                         src="{{asset('assets/images/'.$review->image)}}" class="testimonial-img" alt=""
-                                    @endif>
-
-                                </td>
-
-
-                        <td style="text-align: center">
-                            <form action="{{route('feed.destroy',$review->id)}}" method="post">
-                                @csrf
-                                @method('DELETE')
-                                <button type="submit"class="btn btn-danger">حذف</button>
-                            </form>
-                           <a href="{{route('feed.show',$review->id)}} " class="btn btn-info" > اضافه</a>
+                        <td style="align-content: center">
+                            <p class="fw-normal mb-1">{{$review->name}}</p>
                         </td>
 
 
-                         <div class="modal fade" id="edit{{ $review->id }}" tabindex="-1" role="dialog"
-                                     aria-labelledby="exampleModalLabel" aria-hidden="true">
-                                    <div class="modal-dialog" role="document">
-                                        <div class="modal-content">
-                                            <div class="modal-header">
-                                                <h5 style="font-family: 'Cairo', sans-serif;" class="modal-title"
-                                                    id="exampleModalLabel">
-                                                Edit
-                                                </h5>
-                                                <button type="button" class="close" data-dismiss="modal"
-                                                        aria-label="Close">
-                                                    <span aria-hidden="true">&times;</span>
-                                                </button>
-                                            </div>
-                                            <div class="modal-body">
-                                                <!-- edit_form -->
-{{--                                                <form action="{{ route('ServeProvide.update', 'test') }}" method="post" enctype="multipart/form-data">--}}
-                                                    {{ method_field('patch') }}
-                                                    @csrf
-                                                    <div class="row">
-                                                        <div class="col-md-6">
-                                                            <label for="name"
-                                                                   class="mr-sm-2">Service Name
-                                                                :</label>
-                                                            <input id="name" type="text" name="name_ar"
-                                                                   class="form-control"
-                                                                   value="{{ $review->name }}"
-                                                            >
-                                                            <input id="id" type="hidden" name="id" class="form-control"
-                                                                   value="{{ $review->id }}">
-                                                        </div>
+                        <td style="align-content: center">
+                            <p class="fw-normal mb-1">{{$review->feedback}}</p>
+                        </td>
 
 
-                                                        <div class="col-md-6">
-                                                            <label for="image"
-                                                                   class="mr-sm-2">Logo
-                                                            </label>
-                                                            <input type="file" class="form-control" name="photo">
-                                                            <img class="custom_img" src="{{asset('assets/images/'.$review->image)}}" width="60" height="60">
 
-                                                        </div>
-                                                    </div>
+                        <td style="align-content: center">
+                            <img style="width: 40%"
+                                 @if($review->image == null)
+                                     src="{{asset('assets/Front-End/img/no_user.png')}}" class="testimonial-img" alt=""
+                                 @else
+                                     src="{{asset('assets/images/'.$review->image)}}" class="testimonial-img" alt=""
+                                @endif>
+                        </td>
 
-                                                    <br><br>
 
-                                                    <div class="modal-footer">
-                                                        <button type="button" class="btn btn-secondary"
-                                                                data-dismiss="modal">{{ trans('aboutus_trans.Close') }}</button>
-                                                        <button type="submit"
-                                                                class="btn btn-success">{{ trans('aboutus_trans.submit') }}</button>
-                                                    </div>
-                                                </form>
+                        <td style="align-content: center">
 
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
+{{--                            <button type="button" class="btn btn-danger btn-sm" data-toggle="modal"--}}
+{{--                                    data-target="#delete{{ $review->id }}"--}}
+{{--                                    title="{{ trans('mess.Delete') }}"><i--}}
+{{--                                    class="fa fa-trash"></i></button>--}}
+
+                           <a href="{{route('feed.show',$review->id)}} " class="btn btn-info btn-sm" type="button" > <i
+                                   class="fa fa-check"></i></a>
+                        </td>
                     </tr>
                     @endforeach
+
                     </tbody>
                 </table>
             </div>
         </div>
     </div>
 </div>
-    {{--<div class="modal fade" id="exampleModal" tabindex="-1" role="dialog" aria-labelledby="exampleModalLabel"--}}
-    {{--     aria-hidden="true">--}}
-    {{--    <div class="modal-dialog" role="document">--}}
-    {{--        <div class="modal-content">--}}
-    {{--            <div class="modal-header">--}}
-    {{--                <h5 style="font-family: 'Cairo', sans-serif;" class="modal-title" id="exampleModalLabel">--}}
-    {{--                    {{ trans('mess.add') }}--}}
-    {{--                </h5>--}}
-    {{--                <button type="button" class="close" data-dismiss="modal" aria-label="Close">--}}
-    {{--                    <span aria-hidden="true">&times;</span>--}}
-    {{--                </button>--}}
-    {{--            </div>--}}
-    {{--         --}}
-    {{--        </div>--}}
-    {{--    </div>--}}
+<!-- delete_modal_Grade -->
+{{--<div class="modal fade" id="delete{{ $review->id }}" tabindex="-1" role="dialog"--}}
+{{--     aria-labelledby="exampleModalLabel" aria-hidden="true">--}}
+{{--    <div class="modal-dialog" role="document">--}}
+{{--        <div class="modal-content">--}}
+{{--            <div class="modal-header">--}}
+{{--                <h5 style="font-family: 'Cairo', sans-serif;" class="modal-title"--}}
+{{--                    id="exampleModalLabel">--}}
+{{--                    {{ trans('mess.delete') }}--}}
+{{--                </h5>--}}
+{{--                <button type="button" class="close" data-dismiss="modal"--}}
+{{--                        aria-label="Close">--}}
+{{--                    <span aria-hidden="true">&times;</span>--}}
+{{--                </button>--}}
+{{--            </div>--}}
+{{--            <div class="modal-body">--}}
+{{--                <form action="{{route('feed.destroy','test')}}" method="post">--}}
+{{--                    {{method_field('Delete')}}--}}
+{{--                    @csrf--}}
+{{--                    {{ trans('mess.Warning') }}--}}
+{{--                    <input id="id" type="hidden" name="id" class="form-control"--}}
+{{--                           value="{{ $review->id }}">--}}
+{{--                    <div class="modal-footer">--}}
+{{--                        <button type="button" class="btn btn-secondary"--}}
+{{--                                data-dismiss="modal">{{ trans('mess.Close') }}</button>--}}
+{{--                        <button type="submit"--}}
+{{--                                class="btn btn-danger">{{ trans('mess.delete') }}</button>--}}
+{{--                    </div>--}}
+{{--                </form>--}}
+{{--            </div>--}}
+{{--        </div>--}}
+{{--    </div>--}}
+{{--</div>--}}
 
-    {{--</div>--}}
 <!-- row closed -->
 @endsection
 @section('js')

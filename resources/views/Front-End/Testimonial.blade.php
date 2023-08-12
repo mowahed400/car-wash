@@ -7,7 +7,15 @@
         <div class="owl-carousel testimonials-carousel">
             @foreach($reviews as $review)
             <div class="testimonial-item">
-                <img   src="{{asset('assets/images/'.$review->image)}}" alt="Image">
+
+                <img @if($review->image == null)
+                         src="{{asset('Front-End/img/no_user.png')}}" class="testimonial-img" alt=""
+                     @else
+                      src="{{asset('assets/images/'.$review->image)}}" alt="Image"
+                @endif
+                >
+
+
                 <div class="testimonial-text">
                     <h3>{{$review->name}}</h3>
                     <p>

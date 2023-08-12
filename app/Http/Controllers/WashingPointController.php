@@ -95,5 +95,5 @@ class WashingPointController extends Controller
     {
         $points = WashingPoint::findOrFail($request->id)->delete();
         return redirect()->back();
-       }
+    }
 }

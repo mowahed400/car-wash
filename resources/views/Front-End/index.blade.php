@@ -85,16 +85,12 @@
         <script src="{{ asset('Front-End/lib/counterup/counterup.min.js')}}"></script>
 
         <!-- Contact Javascript File -->
-        <<<<<<< HEAD <script src="{{ asset('Front-End') }}/mail/jqBootstrapValidation.min.js">
-                </script>
-                <script src="{{ asset('Front-End') }}/mail/contact.js"></script>
-                =======
-                <script src="{{ asset('Front-End/mail/jqBootstrapValidation.min.js') }}"></script>
-                <script src="{{ asset('Front-End/mail/contact.js') }}"></script>
-                >>>>>>> development
+       <script src="{{ asset('Front-End') }}/mail/jqBootstrapValidation.min.js"></script>
+       <script src="{{ asset('Front-End') }}/mail/contact.js"></script>
 
-                <!-- Template Javascript -->
-                <script src="{{ asset('Front-End/js/main.js') }}"></script>
+
+       <!-- Template Javascript -->
+       <script src="{{ asset('Front-End/js/main.js') }}"></script>
 
 
 
