@@ -49,7 +49,7 @@ return [
     'Plate Number' => 'ارقام اللوحات',
     'CLose' => 'اغلاق',
     'Where To Find Us' => 'اين تجدنا',
-    'Washing Points' => 'مكاننا',
+    'Washing Points' => 'اماكنّا',
     'Car Washing & Care Points' => 'غسيل السيارات & خدمات السيارات',
     'worktime' => 'ساعات العمل',
     'Call' => 'اتصل بنا ',

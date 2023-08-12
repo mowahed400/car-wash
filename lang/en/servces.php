@@ -10,7 +10,7 @@ return [
     'Oil Changing'=>'Oil Changing',
     'Brake Reparing'=>'Brake Reparing',
     'WHAT WE DO'=>'WHAT WE DO',
-    'Service Points'=>'S e r v i c e  -  P o i n t s ?',
+    'Service Points'=>'S e r v i c e  -  P o i n t s ',
     'Engineers & Workers'=>'Engineers & Workers',
     'Happy Clients'=>'Happy Clients',
     'Projects Completed'=>'Projects Completed',

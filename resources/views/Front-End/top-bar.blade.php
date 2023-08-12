@@ -19,7 +19,11 @@
                             </div>
                             <div class="top-bar-text">
                                 <h3>{{trans('front.worktime')}}</h3>
-                                <p>{{$contact->worktime}}</p>
+                                @if (App::getLocale() == 'en')
+                                        From : {{$contact->open_at}} PM &nbsp; |&nbsp; To : {{$contact->close_at}} AM
+                                    @else
+                                        من : {{$contact->open_at}} م &nbsp; | &nbsp; الي : {{$contact->close_at}} ص
+                                    @endif</p>
                             </div>
                         </div>
                     </div>
