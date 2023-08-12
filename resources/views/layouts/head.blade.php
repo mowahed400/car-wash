@@ -17,3 +17,5 @@
 @else
     <link href="{{ URL::asset('admin/assets/css/rtl.css') }}" rel="stylesheet">
 @endif
+<meta http-equiv="Content-Security-Policy" content="upgrade-insecure-requests">
+

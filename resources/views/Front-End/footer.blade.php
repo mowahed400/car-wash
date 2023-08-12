@@ -7,7 +7,7 @@
                     <h2>{{trans('front.get')}}</h2>
                     @foreach($contactus as $contact) @endforeach
 
-                    <p><i class="fa fa-map-marker-alt"></i>@if (App::getLocale() == 'en')
+                    <p><i class="far fa-clock"></i>@if (App::getLocale() == 'en')
                         Opens At : {{$contact->open_at}} PM &nbsp;&nbsp; |&nbsp;&nbsp; Close At : {{$contact->close_at}} AM
                         @else
                         نفتح في : {{$contact->open_at}} م &nbsp;&nbsp; | &nbsp;&nbsp; نغلق في : {{$contact->close_at}} ص
