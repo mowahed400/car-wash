@@ -1,6 +1,12 @@
 <?php
 
+use App\Http\Controllers\MessageController;
+use App\Http\Controllers\ConnectController;
+use App\Http\Controllers\ReviewController;
+use App\Http\Controllers\WashingPointController;
+use App\Http\Controllers\WelcomeController;
 use Illuminate\Support\Facades\Route;
+use Mcamara\LaravelLocalization\Facades\LaravelLocalization;
 
 /*
 |--------------------------------------------------------------------------
@@ -13,6 +19,19 @@ use Illuminate\Support\Facades\Route;
 |
 */
 
-Route::get('/', function () {
-    return view('welcome');
-});
+Auth::routes();
+Route::get('/', [WelcomeController::class,'index']);
+Route::resource('message', MessageController::class);
+Route::resource('feedback',ReviewController::class);
+
+
+
+Route::group(['middleware' => ['auth']], function () {
+
+        Route::get('/home', [App\Http\Controllers\HomeController::class, 'index'])->name('home');
+        Route::resource('mess', MessageController::class);
+        Route::resource('feed', ReviewController::class);
+        Route::resource('connect', ConnectController::class);
+        Route::resource('points', WashingPointController::class);
+    }
+);
